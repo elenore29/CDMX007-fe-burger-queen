@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import logo from './images/logo.png';
+import Login from './components/Login.js'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <header className="App-header">
         <img className="burger-logo" src={logo} alt="Logo"></img>
       </header>
+      <Login></Login>
     </div>
   );
 }
