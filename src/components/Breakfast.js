@@ -3,7 +3,6 @@ import './Client.css';
 import logo from '../images/logo.png';
 import Ticket from './Ticket.js'
 
-
 class Breakfast extends Component {
     render() {
         return ( 
