@@ -1,0 +1,13 @@
+.ticket-box {
+    background-color: #edf5f9;
+    height: 100vh; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ticket {
+    background-color:#acb8bf; 
+    width: 100%; 
+    height: 90%;
+    box-shadow: -4px 10px 15px 5px grey;
+}
