@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.App-header {
+    background-color: #edf5f9;
+    width: 50%;
+    height: 100vh; 
+    color: #7dcff1;
+    float: left;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  .burger-logo {
+    padding-top: 10%; 
+    width: 50%; 
+  }
+
+  .client-name {
+    width: 50%; 
+    height: 50px; 
+    border-radius: 20px; 
+    font-size: 30px; 
+    font-family: 'Roboto', sans-serif;
+    color: #acb8bf; 
+    border-color: #acb8bf; 
+    border-style: solid;
+    border-width: 3px;
+  }
