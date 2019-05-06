@@ -5,6 +5,7 @@ import Client from './components/Client.js';
 import Breakfast from './components/Breakfast.js'; 
 import Hamburgers from './components/hamburgers.js'; 
 import Specifications from './components/Specifications.js'; 
+import Logout from './images/logout-icon.png' 
 
 const Cliente = () => {
   return <Client></Client>; 
@@ -39,6 +40,9 @@ const AppRouter = () => {
             </li>
             <li style={{ listStyleType: "none" }}>
               <Link to="/especificaciones/" className="menu-link">Especificaciones</Link>
+            </li>
+            <li style={{ listStyleType: "none" }}>
+              <Link to="/" className="menu-link"><img class="logout" src={Logout}></img></Link>
             </li>
           </ul>
         </nav>
