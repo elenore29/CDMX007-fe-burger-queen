@@ -1,22 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
-import Client from './components/Client.js'
+import Client from './components/Client.js';
+import Breakfast from './components/Breakfast.js'; 
+import Hamburgers from './components/hamburgers.js'; 
+import Specifications from './components/Specifications.js'; 
 
 const Cliente = () => {
   return <Client></Client>; 
 }
 
 const Desayuno = () => {
-  return <h2>Desayuno</h2>; 
+  return <Breakfast></Breakfast>; 
 }
 
 const Hamburguesas = () => {
-  return <h2>Hamburguesas</h2>;
+  return <Hamburgers></Hamburgers>;
 }
 
 const Especificaciones = () => {
-  return <h2>Especificaciones</h2>;
+  return <Specifications></Specifications>;
 }
 
 const AppRouter = () => {
@@ -40,7 +43,7 @@ const AppRouter = () => {
           </ul>
         </nav>
 
-        <Route path="/cliente/" component={Cliente} />
+        <Route path="/cliente" component={Cliente} />
         <Route path="/desayuno" exact component={Desayuno} />
         <Route path="/hamburguesas/" component={Hamburguesas} />
         <Route path="/especificaciones/" component={Especificaciones} />
