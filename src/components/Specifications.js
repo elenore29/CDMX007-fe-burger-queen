@@ -1,21 +1,44 @@
 import React, {Component} from 'react';
 import './Client.css';
+import './Component.css'
 import logo from '../images/logo.png';
-import Ticket from './Ticket.js'
-
+import Ticket from './Ticket.js';
+import menu from './menu.json'; 
+import add from '../images/agregar.png';
+import remove from '../images/quitar.png'; 
 
 class Specifications extends Component {
+  constructor() {
+    super();
+    this.state = {
+      menu
+    }
+  }
     render() {
+      const Menu = this.state.menu.especificaciones.map((hamburguers, i) => {
+        return (
+          <div className="icon-container">
+            <img className="menu-icon" src={hamburguers.img} alt="Sencilla"></img>
+            <p className="product-title">{hamburguers.producto}</p>
+          </div>
+        )
+      })
         return ( 
             <div className="App">
             <header className="App-header">
               <img className="burger-logo" src={logo} alt="Logo"></img>
               <h1>Especificaciones</h1>
+              <p className="menu-title">Selecciona para agregar porción extra o quitar</p>
+              <div className="menu-container">{Menu}</div>
+              <div> 
+              <img className="add-icon" src={add} alt="Agregar"></img>
+              <img className="add-icon" src={remove} alt="Quitar"></img>
+              </div>
             </header>
             <Ticket></Ticket>
           </div>
             )
     }
-}
+};
 
 export default Specifications;
