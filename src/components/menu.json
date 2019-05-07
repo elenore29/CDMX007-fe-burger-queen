@@ -1,0 +1,90 @@
+{
+    "sencilla": [
+        {
+            "producto": "Res",
+            "tamaoo": "Sencilla",
+            "precio": "40",
+            "img": "https://i.ibb.co/9YvyPRG/sencilla.png"
+        },
+        {
+            "producto": "Pollo",
+            "tamano": "Sencilla",
+            "precio": "40",
+            "img": "https://i.ibb.co/9YvyPRG/sencilla.png"
+        },
+        {
+            "producto": "Vegetariana",
+            "tamano": "Sencilla",
+            "precio": "40",
+            "img": "https://i.ibb.co/9YvyPRG/sencilla.png"
+        }
+    ],
+    "doble": [
+        {
+            "producto": "Res",
+            "tamano": "Doble",
+            "precio": "55",
+            "img": "https://i.ibb.co/ccmj7ym/hamburger.png"
+        }, 
+        {
+            "producto": "Pollo",
+            "tamaño": "Doble",
+            "precio": "55",
+            "img": "https://i.ibb.co/ccmj7ym/hamburger.png"
+        },
+        {
+            "producto": "Vegetariana",
+            "tamano": "Doble",
+            "precio": "55",
+            "img": "https://i.ibb.co/ccmj7ym/hamburger.png"
+        }
+    ],
+    "desayuno": [
+        {
+            "producto": "Sándwich",
+            "precio": "35", 
+            "img": "https://i.ibb.co/9YvyPRG/sencilla.png"
+        }, 
+        {
+            "producto": "Café",
+            "precio": "20", 
+            "img": "https://i.ibb.co/5Mj4BXx/coffee.png"
+        },
+        {
+            "producto": "Café con leche",
+            "precio": "28", 
+            "img": "https://i.ibb.co/5Mj4BXx/coffee.png"
+        },
+        {
+            "producto": "Jugo",
+            "precio": "15", 
+            "img": "https://i.ibb.co/ScWCbnK/jugo.png"
+        }
+    ],
+    "especificaciones": [
+        {
+            "producto": "Cebolla",
+            "img": "https://i.ibb.co/gV71y92/onion.png"
+        }, 
+        {
+            "producto": "Pepinillos",
+            "img": "https://i.ibb.co/7CJPvQP/pickle.png"
+        },
+        {
+            "producto": "Jitomate",
+            "img": "https://i.ibb.co/rFhgkW5/tomato.png"
+        },
+        {
+            "producto": "Lechuga",
+            "img": "https://i.ibb.co/Y0gzY9r/lettuce.png"
+        },
+        {
+            "producto": "Aderezos",
+            "img": "https://i.ibb.co/G5SNTB0/sauce-bottle.png"
+        },
+        {
+            "producto": "Queso",
+            "img": "https://i.ibb.co/NpwdzQY/cheese.png"
+        }
+    ]
+}
