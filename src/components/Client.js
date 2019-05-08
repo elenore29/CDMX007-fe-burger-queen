@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './Client.css';
 import logo from '../images/logo.png';
 import Ticket from './Ticket.js'
+import Input from './Input.js'
 
 class Client extends Component {
     render() {
@@ -10,7 +11,7 @@ class Client extends Component {
             <header className="App-header">
               <img className="burger-logo" src={logo} alt="Logo"></img>
               <h1>NOMBRE</h1>
-              <input className="client-name" type="text" placeholder=" Nombre del cliente"></input>
+              <Input></Input>
             </header>
             <Ticket></Ticket>
           </div>
