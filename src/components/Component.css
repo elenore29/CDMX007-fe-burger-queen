@@ -11,12 +11,29 @@ color: #acb8bf;
 }
 
 .icon-container {
-    width: 28%; 
+    width: 80%; 
     background-color: #d9e3e6; 
-    display: inline-block; 
+    float: left; 
+    padding-top: 10px;  
+    padding-bottom: 10px;    
+}
+
+.menu-boxes {
+    width: 28%; 
+    display: inline-block;
     margin: 10px; 
-    padding-top: 10px;
-    padding-bottom: 10px; 
+    align-items: center; 
+}
+
+.center {
+    display: flex;
+    align-items: center; 
+}
+
+.arrow-box {
+    display: flex;
+    flex-direction: column; 
+    margin: 0px; 
 }
 
 .menu-container {
@@ -59,4 +76,8 @@ margin: 10px;
 .mini-icon2 {
     height: 50px; 
     margin-left: 20px; 
+}
+
+.arrow-down {
+    width: 20px; 
 }

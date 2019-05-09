@@ -15,10 +15,15 @@ class Specifications extends Component {
     render() {
       const Menu = this.state.menu.especificaciones.map((hamburguers, i) => {
         return (
-          <div className="icon-container">
-            <img className="menu-icon" src={hamburguers.img} alt="Sencilla"></img>
-            <p className="product-title">{hamburguers.producto}</p>
-          </div>
+          <div className="menu-boxes"> 
+          <div className="center">
+            <div className="icon-container">
+              <img className="menu-icon" src={hamburguers.img} alt="Sensilla"></img>
+              <p className="product-title">{hamburguers.producto}</p>
+            </div>
+           
+            </div>
+            </div>
         )
       })
         return ( 
