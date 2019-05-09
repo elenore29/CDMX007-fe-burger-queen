@@ -10,14 +10,18 @@ class Input extends Component {
     };
     
     handleInput(event){
-        console.log(event.target.value)
+        const valor = event.target.value;
+        console.log(valor); 
         this.setState({
-            value: event.target.value
+            value: valor
         });
     }
     render() {
         return ( 
-            <input className="client-name" placeholder=" Nombre del cliente" type="text" onChange={this.handleInput.bind(this)} value={this.defaultValue}></input>
+            <div>
+            <input className="client-name" placeholder=" Nombre del cliente" type="text" onChange={this.handleInput.bind(this)} value={this.value}></input>
+            <div className="client-name2">{this.state.value}</div>
+            </div>
             )
     }
 }

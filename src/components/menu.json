@@ -43,7 +43,7 @@
         {
             "producto": "Sándwich",
             "precio": "35", 
-            "img": "https://i.ibb.co/9YvyPRG/sencilla.png"
+            "img": "https://i.ibb.co/17yZs3T/sandwich.png"
         }, 
         {
             "producto": "Café",
@@ -85,6 +85,42 @@
         {
             "producto": "Queso",
             "img": "https://i.ibb.co/NpwdzQY/cheese.png"
+        }
+    ],
+    "bebidas": [
+        {
+            "producto": "Agua",
+            "precio": "10", 
+            "img": "https://i.ibb.co/dgHPxB2/agua.png"
+        },
+        {
+            "producto": "Refresco",
+            "precio": "10", 
+            "img": "https://i.ibb.co/XJPk2JZ/beverage.png"
+        }
+    ],
+    "guarniciones": [
+        {
+            "producto": "Papas fritas",
+            "precio": "15", 
+            "img": "https://i.ibb.co/hcMZXcz/french-fries2.png"
+        },
+        {
+            "producto": "Aros de cebolla",
+            "precio": "15", 
+            "img": "https://i.ibb.co/xMJY8Vd/onion-rings.png"
+        }
+    ],
+    "extras": [
+        {
+            "producto": "Huevo",
+            "precio": "15", 
+            "img": "https://i.ibb.co/3cGqzJv/egg.png"
+        },
+        {
+            "producto": "Queso",
+            "precio": "15", 
+            "img": "https://i.ibb.co/hFSvGp6/cheese-3.png"
         }
     ]
 }

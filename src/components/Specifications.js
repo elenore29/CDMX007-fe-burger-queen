@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import './Client.css';
 import './Component.css'
 import logo from '../images/logo.png';
-import Ticket from './Ticket.js';
 import menu from './menu.json'; 
 import add from '../images/agregar.png';
 import remove from '../images/quitar.png'; 
@@ -27,7 +25,7 @@ class Specifications extends Component {
             <div className="App">
             <header className="App-header">
               <img className="burger-logo" src={logo} alt="Logo"></img>
-              <h1>Especificaciones</h1>
+              <h1>ESPECIFICACIONES</h1>
               <p className="menu-title">Selecciona para agregar porción extra o quitar</p>
               <div className="menu-container">{Menu}</div>
               <div> 
@@ -35,7 +33,6 @@ class Specifications extends Component {
               <img className="add-icon" src={remove} alt="Quitar"></img>
               </div>
             </header>
-            <Ticket></Ticket>
           </div>
             )
     }

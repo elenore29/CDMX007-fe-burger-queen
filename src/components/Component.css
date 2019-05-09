@@ -36,3 +36,27 @@ h1 {
 .add-icon {
 margin: 10px; 
 }
+
+.mini-menu {
+    width: 100%; 
+}
+
+.mini-menu2 {
+    float: right;
+    margin-right: 5%; 
+}
+
+.mini {
+    display: flex;
+    height: 70px; 
+}
+
+.mini-icon {
+    padding: 0px; 
+    margin: 0px; 
+}
+
+.mini-icon2 {
+    height: 50px; 
+    margin-left: 20px; 
+}
