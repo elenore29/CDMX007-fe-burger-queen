@@ -5,7 +5,8 @@ import Client from './components/Client.js';
 import Breakfast from './components/Breakfast.js'; 
 import Hamburgers from './components/Hamburgers.js'; 
 import Specifications from './components/Specifications.js'; 
-import Logout from './images/logout-icon.png' 
+import Ticket from './components/Ticket.js'; 
+import Logout from './images/exit.png' 
 
 const Cliente = () => {
   return <Client></Client>; 
@@ -51,6 +52,7 @@ const AppRouter = () => {
         <Route path="/desayuno" exact component={Desayuno} />
         <Route path="/hamburguesas/" component={Hamburguesas} />
         <Route path="/especificaciones/" component={Especificaciones} />
+        <Ticket></Ticket>
       </div>
     </Router>    
   );

@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import './Client.css';
 import './Component.css'
-import logo from '../images/logo.png';
 import menu from './menu.json'; 
 
-class Breakfast extends Component {
+class Bebidas extends Component {
   constructor() {
     super();
     this.state = {
@@ -12,7 +10,7 @@ class Breakfast extends Component {
     }
   }
     render() {
-      const Menu = this.state.menu.desayuno.map((hamburguers, i) => {
+      const Menu = this.state.menu.bebidas.map((hamburguers, i) => {
         return (
           <div className="icon-container">
             <img className="menu-icon" src={hamburguers.img} alt="Sensilla"></img>
@@ -21,17 +19,15 @@ class Breakfast extends Component {
           </div>
         )
       })
-    
+   
         return ( 
-            <div className="App">
-            <header className="App-header">
-              <img className="burger-logo" src={logo} alt="Logo"></img>
-              <h1>DESAYUNOS</h1>
+            <div className="menu-container">
+            <h1>Bebidas</h1>
+              <p className="menu-title">Elige una bebida</p>
               <div className="menu-container">{Menu}</div>
-            </header>
           </div>
             )
     }
 };
 
-export default Breakfast;
+export default Bebidas;
