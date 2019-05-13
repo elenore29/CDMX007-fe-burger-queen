@@ -14,7 +14,7 @@ class Hamburgers extends Component {
     render() {
       const Menu = this.state.menu.sencilla.map((hamburguers, i) => {
         return (
-        <div className="menu-boxes"> 
+        <div key={i} className="menu-boxes"> 
         <div className="center">
           <div className="icon-container">
             <img className="menu-icon" src={hamburguers.img} alt="Sensilla"></img>
@@ -29,7 +29,7 @@ class Hamburgers extends Component {
       })
       const Menu2 = this.state.menu.doble.map((hamburguers, i) => {
         return (
-            <div className="menu-boxes"> 
+            <div key={i} className="menu-boxes"> 
             <div className="center">
               <div className="icon-container">
                 <img className="menu-icon" src={hamburguers.img} alt="Sensilla"></img>
