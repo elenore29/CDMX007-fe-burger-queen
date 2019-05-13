@@ -1,61 +1,57 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './App.css';
-import Client from './components/Client.js';
-import Breakfast from './components/Breakfast.js'; 
-import Hamburgers from './components/Hamburgers.js'; 
-import Specifications from './components/Specifications.js'; 
-import Ticket from './components/Ticket.js'; 
-import Logout from './images/exit.png' 
+import React, {Component} from 'react';
+import Menu from './components/Menu';
+import Ticket from './components/Ticket'; 
 
-const Cliente = () => {
-  return <Client></Client>; 
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+        logged: false, 
+        clientName: ''
+      }
+      this.handleClientName = this.handleClientName.bind(this);
+};
+
+handleClientName (name){
+  console.log(name)
+  this.setState(
+    {
+      clientName: name
+    }
+  )
+  
+};
+
+handleInput2(event) {
+  this.setState({
+    logged: true
+  })
 }
 
-const Desayuno = () => {
-  return <Breakfast></Breakfast>; 
-}
-
-const Hamburguesas = () => {
-  return <Hamburgers></Hamburgers>;
-}
-
-const Especificaciones = () => {
-  return <Specifications></Specifications>;
-}
-
-const AppRouter = () => {
-  return (
-    <Router>
+handleRender() {
+  console.log(this.state.logged)
+  if(this.state.logged) {
+    return ( 
       <div>
-        <nav className="nav-box">
-          <ul>
-            <li style={{ listStyleType: "none" }}>
-              <Link to="/cliente/" className="menu-link">Cliente</Link>
-            </li>
-            <li style={{ listStyleType: "none" }}>
-              <Link to="/desayuno/" className="menu-link">Desayuno</Link>
-            </li>
-            <li style={{ listStyleType: "none" }}>
-              <Link to="/hamburguesas/" className="menu-link">Hamburguesas</Link>
-            </li>
-            <li style={{ listStyleType: "none" }}>
-              <Link to="/especificaciones/" className="menu-link">Especificaciones</Link>
-            </li>
-            <li style={{ listStyleType: "none" }}>
-              <Link to="/" className="menu-link"><img className="logout" src={Logout} alt="Cerrar Sesión"></img></Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Route path="/cliente" component={Cliente} />
-        <Route path="/desayuno" exact component={Desayuno} />
-        <Route path="/hamburguesas/" component={Hamburguesas} />
-        <Route path="/especificaciones/" component={Especificaciones} />
-        <Ticket></Ticket>
+      <Menu />
+        <Ticket clientName={this.state.clientName}>{this.state.clientName}</Ticket>
       </div>
-    </Router>    
-  );
+      )
+  }
+   else {
+     return (
+      <button onClick={this.handleInput2.bind(this)}>Iniciar sesión</button>
+     ); 
+   }
 }
 
-export default AppRouter;
+  render() {
+      return ( 
+        <div>{this.handleRender()}</div>
+        )
+      //return this.state.data ? <Menu></Menu> : 'trayendo data...';
+  }
+} 
+
+export default App;
