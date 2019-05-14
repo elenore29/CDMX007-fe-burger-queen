@@ -36,16 +36,16 @@ const MiniRouter = () => {
         <nav className="mini-menu2">
           <ul className="mini">
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/hamburguesas/" ><img className="mini-icon2" src={Burger}></img></Link>
+              <Link to="/hamburguesas/" ><img className="mini-icon2" src={Burger} alt="Hamburguesas"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/bebidas/"><img className="mini-icon2" src={Soda}></img></Link>
+              <Link to="/bebidas/"><img className="mini-icon2" src={Soda} alt="Bebidas"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/guarniciones/"><img className="mini-icon2" src={Fries}></img></Link>
+              <Link to="/guarniciones/"><img className="mini-icon2" src={Fries} alt="Guarniciones"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/extras/"><img className="mini-icon2" src={Egg}></img></Link>
+              <Link to="/extras/"><img className="mini-icon2" src={Egg} alt="Extras"></img></Link>
             </li>
           </ul>
         </nav>

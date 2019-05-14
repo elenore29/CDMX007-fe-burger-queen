@@ -47,7 +47,7 @@ handleClientName(name){
         </nav>
 
         <Route path="/cliente" component={() => <Client handleClientName={this.handleClientName.bind(this)}/>}/> 
-        <Route path="/desayuno" exact component={Breakfast} />
+        <Route path="/desayuno" component={Breakfast} />
         <Route path="/hamburguesas/" component={Hamburgers} />
         <Route path="/especificaciones/" component={Specifications} />
         <Ticket clientName={this.state.clientName}></Ticket>

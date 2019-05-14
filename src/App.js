@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import Menu from './components/Menu';
+import './App.css';
+import logo from './images/logo.png'
+import './components/Client.css'; 
 
 class App extends Component {
   constructor(props) {
@@ -25,7 +28,10 @@ handleRender() {
   }
    else {
      return (
-      <button onClick={this.handleInput2.bind(this)}>Iniciar sesión</button>
+      <div className="back-login">
+      <img className="burger-logo" src={logo}></img>
+        <button className="login" onClick={this.handleInput2.bind(this)}>Iniciar sesión</button>
+      </div>
      ); 
    }
 }

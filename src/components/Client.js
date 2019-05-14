@@ -5,7 +5,6 @@ import Input from './Input.js';
 
 class Client extends Component {
   render() {
-    console.log('client props', this.props); 
     return ( 
       <div className="App">
         <header className="App-header">

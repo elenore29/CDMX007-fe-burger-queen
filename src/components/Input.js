@@ -15,7 +15,7 @@ class Input extends Component {
         this.setState({
             value: valor
         });
-        this.props.handleClientName(this.state.value) 
+        this.props.handleClientName(valor) 
     }
   
     render() {
