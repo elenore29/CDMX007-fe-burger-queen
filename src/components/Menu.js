@@ -6,8 +6,21 @@ import Breakfast from './Breakfast.js';
 import Hamburgers from './Hamburgers.js'; 
 import Specifications from './Specifications.js'; 
 import Logout from '../images/exit.png' 
+import Ticket from './Ticket.js'; 
 
 class AppRouter extends Component  {
+  constructor(props) {
+    super(props);
+    this.state = {
+        clientName: ''
+      }
+};
+
+handleClientName(name){
+  this.setState({
+      clientName: name
+  })
+};
   
   render = () => {
     return(
@@ -33,10 +46,11 @@ class AppRouter extends Component  {
           </ul>
         </nav>
 
-        <Route path="/cliente" component={() => <Client handleClientName={this.props.handleClientName}/>}/> 
+        <Route path="/cliente" component={() => <Client handleClientName={this.handleClientName.bind(this)}/>}/> 
         <Route path="/desayuno" exact component={Breakfast} />
         <Route path="/hamburguesas/" component={Hamburgers} />
         <Route path="/especificaciones/" component={Specifications} />
+        <Ticket clientName={this.state.clientName}></Ticket>
       </div>
     </Router>    
     )
