@@ -44,7 +44,7 @@ class Hamburgers extends Component {
       })
         return ( 
             <div className="menu-container">
-            <h1>HAMBURGESAS</h1>
+            <h1>HAMBURGESAS 2</h1>
               <p className="menu-title">SENCILLA $40</p>
               <div className="menu-container">{Menu}</div>
               <p className="menu-title">DOBLE $55</p>
