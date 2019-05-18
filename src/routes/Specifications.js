@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './Component.css'
+import '../App.css'
+import menu from '../components/menu.json'; 
 import logo from '../images/logo.png';
-import menu from './menu.json'; 
 import add from '../images/agregar.png';
 import remove from '../images/quitar.png'; 
 

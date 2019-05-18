@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './Component.css'
-import menu from './menu.json'; 
+import '../App.css'
+import menu from '../components/menu.json';  
 import Down from '../images/abajo_1.png';
 import Up from '../images/arriba.png';
 

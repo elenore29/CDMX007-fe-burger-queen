@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Hamburgers from './Hamburgers2.js'; 
+import Hamburgers from '../routes/Hamburgers2.js'; 
 import Drinks from './Bebidas.js';
 import Guar from './Guarniciones.js'; 
 import Extra from './Extras.js'; 

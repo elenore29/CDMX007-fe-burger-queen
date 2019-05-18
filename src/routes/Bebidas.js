@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import './Component.css'
-import menu from './menu.json'; 
+import '../App.css'
+import menu from '../components/menu.json'; 
 import Down from '../images/abajo_1.png';
 import Up from '../images/arriba.png';
 
-class Guarniciones extends Component {
+class Bebidas extends Component {
   constructor() {
     super();
     this.state = {
@@ -12,7 +12,7 @@ class Guarniciones extends Component {
     }
   }
     render() {
-      const Menu = this.state.menu.guarniciones.map((hamburguers, i) => {
+      const Menu = this.state.menu.bebidas.map((hamburguers, i) => {
         return (
         <div key={i} className="menu-boxes"> 
         <div className="center">
@@ -28,15 +28,15 @@ class Guarniciones extends Component {
           </div>
         )
       })
-
+   
         return ( 
             <div className="menu-container">
-            <h1>GUARNICIÓN</h1>
-              <p className="menu-title">+ $15</p>
+            <h1>BEBIDAS</h1>
+              <p className="menu-title">Elige una bebida</p>
               <div className="menu-container">{Menu}</div>
           </div>
             )
     }
 };
 
-export default Guarniciones;
+export default Bebidas;

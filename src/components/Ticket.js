@@ -1,20 +1,31 @@
+import {AppContextConsumer} from '../store/index.js'
 import React, {Component, Fragment} from 'react';
-import './Ticket.css';
-import './Client.css';
+import '../App.css'
 
-class Ticket extends Component {
-    render() {
-        return ( 
-            <Fragment>
-                <span>{this.props.clientName}</span>
+class Ticket extends Component{
+   render(){
+      return (
+         <AppContextConsumer>
+           {value => {
+             return (
+               <Fragment>
                 <div className="ticket-box">
-                <div className="ticket">Ticket
-                <div className="total">$0.00</div>
+                    <div className="ticket">Ticket
+                        <p>{value.titulo}</p>
+                        <ul> 
+                            {value.usuarios.map(usuario => 
+                                <li>{usuario} </li>
+                            )}
+                        </ul>
+                        <div className="total">$0.00</div>
+                    </div>
                 </div>
-                </div>
-            </Fragment>
-            );
-    }
+               </Fragment>
+             )
+           }} 
+         </AppContextConsumer>
+      ); 
+   }
 }
 
-export default Ticket;
+export default Ticket; 

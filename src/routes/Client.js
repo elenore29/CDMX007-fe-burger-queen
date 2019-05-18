@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './Client.css';
+import '../App.css';
 import logo from '../images/logo.png';
-import Input from './Input.js'; 
+import Input from '../components/Input.js'; 
 
 class Client extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Client.css';
+import '../App.css';
 
 class Input extends Component {
     constructor(props) {
@@ -15,14 +15,14 @@ class Input extends Component {
         this.setState({
             value: valor
         });
-        this.props.handleClientName(valor) 
-    }
+/*         this.props.handleClientName(valor) 
+ */    }
   
     render() {
         return ( 
             <div>
                 <input className="client-name" placeholder=" Nombre del cliente" 
-                type="text" onChange={this.handleInput.bind(this)} value={this.value}></input>
+                type="text"  onChange={this.handleInput.bind(this)} value={this.value} ></input>
                 <div className="client-name2">{this.state.value}</div>
             </div>
         )

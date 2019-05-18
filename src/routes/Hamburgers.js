@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import './Client.css';
-import './Component.css'
+import '../App.css'
 import logo from '../images/logo.png';
 import Minimenu from './Minimenu.js'; 
 

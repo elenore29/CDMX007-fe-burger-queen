@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import './Client.css';
-import './Component.css'
-import logo from '../images/logo.png';
-import menu from './menu.json'; 
+import '../App.css'
+import menu from '../components/menu.json'; 
 import Down from '../images/abajo_1.png';
 import Up from '../images/arriba.png';
 
-class Breakfast extends Component {
+class Guarniciones extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,9 +12,9 @@ class Breakfast extends Component {
     }
   }
     render() {
-      const Menu = this.state.menu.desayuno.map((hamburguers, i) => {
+      const Menu = this.state.menu.guarniciones.map((hamburguers, i) => {
         return (
-          <div key={i} className="menu-boxes"> 
+        <div key={i} className="menu-boxes"> 
         <div className="center">
           <div className="icon-container">
             <img className="menu-icon" src={hamburguers.img} alt="Sensilla"></img>
@@ -30,17 +28,15 @@ class Breakfast extends Component {
           </div>
         )
       })
-    
+
         return ( 
-            <div className="App">
-            <header className="App-header">
-              <img className="burger-logo" src={logo} alt="Logo"></img>
-              <h1>DESAYUNOS</h1>
+            <div className="menu-container">
+            <h1>GUARNICIÓN</h1>
+              <p className="menu-title">+ $15</p>
               <div className="menu-container">{Menu}</div>
-            </header>
           </div>
             )
     }
 };
 
-export default Breakfast;
+export default Guarniciones;

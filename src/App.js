@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
-import Menu from './components/Menu';
-import './App.css';
+import './App.css'
+import Menu from './routes/index.js'
+import Ticket from './components/Ticket.js'
 import logo from './images/logo.png'
-import './components/Client.css'; 
+import React, { Component} from 'react';
+import {AppContextProvider} from './store/index.js'
 
 class App extends Component {
   constructor(props) {
@@ -23,13 +24,16 @@ handleRender() {
   console.log(this.state.logged)
   if(this.state.logged) {
     return ( 
-      <Menu />
+      <AppContextProvider>
+        <Menu></Menu>
+        <Ticket clientName={this.state.clientName}></Ticket>
+      </AppContextProvider>
       )
   }
    else {
      return (
       <div className="back-login">
-      <img className="burger-logo" src={logo}></img>
+      <img className="burger-logo" src={logo} alt="Logo"></img>
         <button className="login" onClick={this.handleInput2.bind(this)}>Iniciar sesión</button>
       </div>
      ); 
