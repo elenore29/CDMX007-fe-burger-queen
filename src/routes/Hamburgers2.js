@@ -15,7 +15,7 @@ class Hamburgers extends Component {
               <p className="menu-title">SENCILLA $40</p>
               <div className="menu-content"> 
                 {value.sencilla.map(element => 
-                  <div className="menu-boxes"> 
+                  <div key={element.i} className="menu-boxes"> 
                     <div className="center">
                       <div className="icon-container">
                         <img className="menu-icon" src={element.img} alt="Sensilla"></img>
@@ -33,7 +33,7 @@ class Hamburgers extends Component {
               <p className="menu-title">DOBLE $55</p>
               <div className="menu-content"> 
                 {value.doble.map(element => 
-                  <div className="menu-boxes"> 
+                  <div key={element.i} className="menu-boxes"> 
                     <div className="center">
                       <div className="icon-container">
                         <img className="menu-icon" src={element.img} alt="Sensilla"></img>

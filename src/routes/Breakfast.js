@@ -18,7 +18,7 @@ class Breakfast extends Component {
                   <h1>DESAYUNOS</h1>
                   <div className="menu-content"> 
                     {value.desayuno.map(element => 
-                      <div className="menu-boxes"> 
+                      <div key={element.i} className="menu-boxes"> 
                         <div className="center">
                           <div className="icon-container">
                             <img className="menu-icon" src={element.img} alt="Sensilla"></img>

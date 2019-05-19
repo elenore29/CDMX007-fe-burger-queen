@@ -18,7 +18,7 @@ class Specifications extends Component {
                 <p className="menu-title">Selecciona para agregar porción extra o quitar</p>
                 <div className="menu-content"> 
                   {value.especificaciones.map(element => 
-                    <div className="menu-boxes"> 
+                    <div key={element.i} className="menu-boxes"> 
                       <div className="center">
                         <div className="icon-container">
                           <img className="menu-icon" src={element.img} alt="Sensilla"></img>

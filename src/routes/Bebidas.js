@@ -15,7 +15,7 @@ class Bebidas extends Component {
               <p className="menu-title">Elige una bebida</p>
               <div className="menu-content"> 
                 {value.bebidas.map(element => 
-                  <div className="menu-boxes"> 
+                  <div key={element.i} className="menu-boxes"> 
                     <div className="center">
                       <div className="icon-container">
                         <img className="menu-icon" src={element.img} alt="Sensilla"></img>
