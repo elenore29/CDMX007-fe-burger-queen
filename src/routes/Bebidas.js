@@ -1,42 +1,41 @@
 import React, {Component} from 'react';
-import '../App.css'
-import menu from '../components/menu.json'; 
+import {AppContextConsumer} from '../store/index.js';
+import '../App.css';
 import Down from '../images/abajo_1.png';
 import Up from '../images/arriba.png';
 
 class Bebidas extends Component {
-  constructor() {
-    super();
-    this.state = {
-      menu
-    }
-  }
-    render() {
-      const Menu = this.state.menu.bebidas.map((hamburguers, i) => {
-        return (
-        <div key={i} className="menu-boxes"> 
-        <div className="center">
-          <div className="icon-container">
-            <img className="menu-icon" src={hamburguers.img} alt="Sensilla"></img>
-            <p className="product-title">{hamburguers.producto}</p>
-            <p className="product-title">$ {hamburguers.precio}</p>
-          </div>
-          <div className="arrow-box"> 
-          <img className="arrow-down" src={Up} alt="Agregar"></img> 
-          <img className="arrow-down" src={Down} alt="Quitar"></img></div> 
-          </div>
-          </div>
-        )
-      })
-   
-        return ( 
+  render() {
+    return (
+      <AppContextConsumer>
+        {value => {
+          return ( 
             <div className="menu-container">
-            <h1>BEBIDAS</h1>
+              <h1>BEBIDAS</h1>
               <p className="menu-title">Elige una bebida</p>
-              <div className="menu-container">{Menu}</div>
-          </div>
-            )
-    }
+              <div className="menu-content"> 
+                {value.bebidas.map(element => 
+                  <div className="menu-boxes"> 
+                    <div className="center">
+                      <div className="icon-container">
+                        <img className="menu-icon" src={element.img} alt="Sensilla"></img>
+                        <p className="product-title">{element.producto}</p>
+                        <p className="product-title">$ {element.precio}</p>
+                      </div>
+                      <div className="arrow-box"> 
+                        <img className="arrow-down" id={element.producto} src={Up} alt="Agregar"></img> 
+                        <img className="arrow-down" id={element.producto} src={Down} alt="Quitar"></img>
+                      </div> 
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )
+        }} 
+      </AppContextConsumer>
+    )
+  }
 };
 
 export default Bebidas;

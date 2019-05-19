@@ -117,7 +117,7 @@ li {
 
 /* components */
 .product-title {
-  font-size: 20px; 
+  font-size: 16px; 
   font-family: 'Roboto', sans-serif;
   color: #acb8bf; 
   }
@@ -133,12 +133,16 @@ li {
       padding-top: 10px;  
       padding-bottom: 10px;    
   }
+
+  .menu-content {
+    width: 100%; 
+  }
   
   .menu-boxes {
-      width: 28%; 
-      display: inline-block;
-      margin: 10px; 
-      align-items: center; 
+    display: inline-block;
+    width: 28%; 
+    margin: 10px; 
+    align-items: center; 
   }
   
   .center {

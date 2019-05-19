@@ -1,17 +1,14 @@
 import React, { Component} from 'react';
+import menu from '../components/menu.json'; 
 
 export const AppContext = React.createContext({
-    usuarios: [],
-    titulo: 'default', 
-  })
+    menu
+})
 
 export class AppContextProvider  extends Component {
     render() {
         return(
-            <AppContext.Provider value={{
-                usuarios: ['leo', 'juan'],
-                titulo: 'App', 
-            }}>
+            <AppContext.Provider value={menu}>
                 {this.props.children}
             </AppContext.Provider>
         ); 
