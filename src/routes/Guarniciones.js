@@ -14,7 +14,7 @@ class Guarniciones extends Component {
               <h1>GUARNICIÓN</h1>
               <p className="menu-title">+ $15</p>
               <div className="menu-content"> 
-                {value.guarniciones.map(element => 
+                {value.menu.guarniciones.map(element => 
                   <div key={element.i} className="menu-boxes"> 
                     <div className="center">
                       <div className="icon-container">
@@ -23,7 +23,7 @@ class Guarniciones extends Component {
                         <p className="product-title">$ {element.precio}</p>
                       </div>
                       <div className="arrow-box"> 
-                        <img className="arrow-down" id={element.producto} src={Up} alt="Agregar"></img> 
+                        <img onClick={value.add} className="arrow-down" id={element.id} src={Up} alt="Agregar"></img> 
                         <img className="arrow-down" id={element.producto} src={Down} alt="Quitar"></img>
                       </div> 
                     </div>

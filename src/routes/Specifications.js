@@ -17,7 +17,7 @@ class Specifications extends Component {
                 <h1>ESPECIFICACIONES</h1>
                 <p className="menu-title">Selecciona para agregar porción extra o quitar</p>
                 <div className="menu-content"> 
-                  {value.especificaciones.map(element => 
+                  {value.menu.especificaciones.map(element => 
                     <div key={element.i} className="menu-boxes"> 
                       <div className="center">
                         <div className="icon-container">

@@ -79,6 +79,10 @@ li {
   background-color: #d9e3e6; 
 }
 
+.product-list {
+  font-size: 20px; 
+}
+
 /* Client */
 .App-header {
   background-color: #edf5f9;

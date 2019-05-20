@@ -14,7 +14,7 @@ class Hamburgers extends Component {
               <h1>HAMBURGESAS 2</h1>
               <p className="menu-title">SENCILLA $40</p>
               <div className="menu-content"> 
-                {value.sencilla.map(element => 
+                {value.menu.sencilla.map(element => 
                   <div key={element.i} className="menu-boxes"> 
                     <div className="center">
                       <div className="icon-container">
@@ -23,8 +23,8 @@ class Hamburgers extends Component {
                         <p className="product-title">$ {element.precio}</p>
                       </div>
                       <div className="arrow-box"> 
-                        <img className="arrow-down" id={element.producto} src={Up} alt="Agregar"></img> 
-                        <img className="arrow-down" id={element.producto} src={Down} alt="Quitar"></img>
+                        <img onClick={value.add} className="arrow-down" id={element.id} src={Up} alt="Agregar"></img> 
+                        <img className="arrow-down" id={element.id} src={Down} alt="Quitar"></img>
                       </div> 
                     </div>
                   </div>
@@ -32,7 +32,7 @@ class Hamburgers extends Component {
               </div>
               <p className="menu-title">DOBLE $55</p>
               <div className="menu-content"> 
-                {value.doble.map(element => 
+                {value.menu.doble.map(element => 
                   <div key={element.i} className="menu-boxes"> 
                     <div className="center">
                       <div className="icon-container">
@@ -41,8 +41,8 @@ class Hamburgers extends Component {
                         <p className="product-title">$ {element.precio}</p>
                       </div>
                       <div className="arrow-box"> 
-                        <img className="arrow-down" id={element.producto} src={Up} alt="Agregar"></img> 
-                        <img className="arrow-down" id={element.producto} src={Down} alt="Quitar"></img>
+                        <img onClick={value.add} className="arrow-down" id={element.id} src={Up} alt="Agregar"></img> 
+                        <img className="arrow-down" id={element.id} src={Down} alt="Quitar"></img>
                       </div> 
                     </div>
                   </div>
