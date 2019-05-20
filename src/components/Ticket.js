@@ -7,6 +7,7 @@ class Ticket extends Component{
     return ( 
       <AppContextConsumer>
         {value => {
+          console.log(value.buttonValue);
           return (
             <Fragment>
               <div className="ticket-box">
@@ -14,11 +15,13 @@ class Ticket extends Component{
                   <div className="client-name2">{value.inputValue}</div>
                   <ul>
                     {value.buttonValue.map(element => 
-                      <li style={{ listStyleType: "none" }} className="product-list">{element} 
+                      <li style={{ listStyleType: "none" }} className="product-list">{element.id} 
                       </li>
                     )}
                   </ul> 
-                  <div className="total">$0.00</div>
+                  <div className="total">${value.buttonValue.reduce((accumulate, current)=>{
+                    return accumulate + Number(current.precio);
+                  }, 0.00)}</div>
                 </div>
               </div>
             </Fragment> 

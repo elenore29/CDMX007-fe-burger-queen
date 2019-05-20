@@ -22,9 +22,8 @@ export class AppContextProvider  extends Component {
         });
     }
 
-    add(event){
-        const id = event.target.id
-        array.push(id); 
+    add(element){
+        array.push(element); 
         this.setState({
             buttonValue: array 
         })

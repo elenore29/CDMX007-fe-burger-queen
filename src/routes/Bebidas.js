@@ -23,7 +23,7 @@ class Bebidas extends Component {
                         <p className="product-title">$ {element.precio}</p>
                       </div>
                       <div className="arrow-box"> 
-                        <img onClick={value.add} className="arrow-down" id={element.id} src={Up} alt="Agregar"></img> 
+                        <img onClick={()=>value.add(element)} className="arrow-down" id={element.id} src={Up} alt="Agregar"></img> 
                         <img className="arrow-down" id={element.id} src={Down} alt="Quitar"></img>
                       </div> 
                     </div>
