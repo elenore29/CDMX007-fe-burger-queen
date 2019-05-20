@@ -83,6 +83,10 @@ li {
   font-size: 20px; 
 }
 
+.delete, .edit {
+  width: 20px; 
+}
+
 /* Client */
 .App-header {
   background-color: #edf5f9;
@@ -114,7 +118,7 @@ li {
 }
 
 .client-name2 {
-  color: #7dcff1;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 35px; 
 }
@@ -126,82 +130,82 @@ li {
   color: #acb8bf; 
   }
   
-  .menu-icon {
-      height: 100%;
-  }
+.menu-icon {
+  height: 100%;
+}
   
-  .icon-container {
-      width: 80%; 
-      background-color: #d9e3e6; 
-      float: left; 
-      padding-top: 10px;  
-      padding-bottom: 10px;    
-  }
+.icon-container {
+  width: 80%; 
+  background-color: #d9e3e6; 
+  float: left; 
+  padding-top: 10px;  
+  padding-bottom: 10px;    
+}
 
-  .menu-content {
-    width: 100%; 
-  }
+.menu-content {
+  width: 100%; 
+}
   
-  .menu-boxes {
-    display: inline-block;
-    width: 28%; 
-    margin: 10px; 
-    align-items: center; 
-  }
-  
-  .center {
-      display: flex;
-      align-items: center; 
-  }
-  
-  .arrow-box {
-      display: flex;
-      flex-direction: column; 
-      margin: 0px; 
-  }
-  
-  .menu-container {
-      width: 100%; 
-  }
-  
-  .menu-title {
-      font-size: 1.5em; 
-      font-family: 'Roboto', sans-serif;
-      color: #acb8bf; 
-  }
-  
-  h1 {
-      font-family: 'Roboto', sans-serif;
-  }
-  
-  .add-icon {
+.menu-boxes {
+  display: inline-block;
+  width: 28%; 
   margin: 10px; 
-  }
+  align-items: center; 
+}
   
-  .mini-menu {
-      width: 100%; 
-  }
+.center {
+  display: flex;
+  align-items: center; 
+}
   
-  .mini-menu2 {
-      float: right;
-      margin-right: 5%; 
-  }
+.arrow-box {
+  display: flex;
+  flex-direction: column; 
+  margin: 0px; 
+}
   
-  .mini {
-      display: flex;
-      height: 70px; 
-  }
+.menu-container {
+  width: 100%; 
+}
   
-  .mini-icon {
-      padding: 0px; 
-      margin: 0px; 
-  }
+.menu-title {
+  font-size: 1.5em; 
+  font-family: 'Roboto', sans-serif;
+  color: #acb8bf; 
+}
   
-  .mini-icon2 {
-      height: 50px; 
-      margin-left: 20px; 
-  }
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
   
-  .arrow-down {
-      width: 20px; 
-  }
+.add-icon {
+  margin: 10px; 
+}
+  
+.mini-menu {
+  width: 100%; 
+}
+  
+.mini-menu2 {
+  float: right;
+  margin-right: 5%; 
+}
+  
+.mini {
+  display: flex;
+  height: 70px; 
+}
+  
+.mini-icon {
+  padding: 0px; 
+  margin: 0px; 
+}
+  
+.mini-icon2 {
+  height: 50px; 
+  margin-left: 20px; 
+}
+  
+.arrow-down {
+  width: 20px; 
+}
