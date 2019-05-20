@@ -17,7 +17,6 @@ export class AppContextProvider  extends Component {
 
     handleInput(event){
         const valor = event.target.value;
-        console.log(valor)
         this.setState({
             inputValue: valor
         });
@@ -29,11 +28,9 @@ export class AppContextProvider  extends Component {
         this.setState({
             buttonValue: array 
         })
-        console.log(array)
     }
 
     render() {
-       
         const {
             inputValue,
         } = this.state;

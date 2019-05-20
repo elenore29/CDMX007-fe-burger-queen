@@ -7,20 +7,7 @@ import Breakfast from './Breakfast.js';
 import Hamburgers from './Hamburgers.js'; 
 import Specifications from './Specifications.js'; 
 
-class Menu extends Component  {
- /*  constructor(props) {
-    super(props);
-    this.state = {
-        clientName: ''
-      }
-};
-
-handleClientName(name){
-  this.setState({
-      clientName: name
-  })
-}; */
-  
+class Menu extends Component  {  
   render = () => {
     return(
       <Router>
