@@ -7,7 +7,6 @@ class Ticket extends Component{
     return ( 
       <AppContextConsumer>
         {value => {
-          console.log(value.buttonValue);
           return (
             <Fragment>
               <div className="ticket-box">
@@ -15,7 +14,7 @@ class Ticket extends Component{
                   <div className="client-name2">{value.inputValue}</div>
                   <ul>
                     {value.buttonValue.map(element => 
-                      <li style={{ listStyleType: "none" }} className="product-list">{element.id} 
+                      <li key={element.id} style={{ listStyleType: "none" }} className="product-list">{element.id} 
                       </li>
                     )}
                   </ul> 

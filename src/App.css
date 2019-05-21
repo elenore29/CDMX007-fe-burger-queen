@@ -135,7 +135,7 @@ li {
 }
   
 .icon-container {
-  width: 80%; 
+  width: 100%; 
   background-color: #d9e3e6; 
   float: left; 
   padding-top: 10px;  
@@ -158,12 +158,6 @@ li {
   align-items: center; 
 }
   
-.arrow-box {
-  display: flex;
-  flex-direction: column; 
-  margin: 0px; 
-}
-  
 .menu-container {
   width: 100%; 
 }
@@ -178,7 +172,7 @@ h1 {
   font-family: 'Roboto', sans-serif;
 }
   
-.add-icon {
+.add-icon, .remove-icon {
   margin: 10px; 
 }
   
@@ -204,8 +198,4 @@ h1 {
 .mini-icon2 {
   height: 50px; 
   margin-left: 20px; 
-}
-  
-.arrow-down {
-  width: 20px; 
 }

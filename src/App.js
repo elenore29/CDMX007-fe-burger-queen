@@ -26,7 +26,7 @@ handleRender() {
     return ( 
       <AppContextProvider>
         <Menu></Menu>
-        <Ticket clientName={this.state.clientName}></Ticket>
+        <Ticket></Ticket>
       </AppContextProvider>
       )
   }

@@ -3,7 +3,7 @@ import {AppContextConsumer} from '../store/index.js';
 import '../App.css';
 import logo from '../images/logo.png';
 import add from '../images/agregar.png';
-import remove from '../images/quitar.png'; 
+import remove from '../images/quitar.png'
 
 class Specifications extends Component {
   render() {
@@ -18,7 +18,7 @@ class Specifications extends Component {
                 <p className="menu-title">Selecciona para agregar porción extra o quitar</p>
                 <div className="menu-content"> 
                   {value.menu.especificaciones.map(element => 
-                    <div key={element.i} className="menu-boxes"> 
+                    <div key={element.id} className="menu-boxes"> 
                       <div className="center">
                         <div className="icon-container">
                           <img className="menu-icon" src={element.img} alt="Sensilla"></img>
@@ -30,7 +30,7 @@ class Specifications extends Component {
                 </div>
                 <div> 
                   <img className="add-icon" src={add} alt="Agregar"></img>
-                  <img className="add-icon" src={remove} alt="Quitar"></img>
+                  <img className="remove-icon" src={remove} alt="Quitar"></img>
                 </div>
               </header>
             </div>
