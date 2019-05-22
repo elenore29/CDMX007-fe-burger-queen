@@ -1,7 +1,5 @@
 import React, { Component} from 'react';
 import menu from '../components/menu.json'; 
-const array = []; 
-
 export const AppContext = React.createContext(); 
 
 export class AppContextProvider  extends Component {
@@ -14,6 +12,7 @@ export class AppContextProvider  extends Component {
         this.handleInput = this.handleInput.bind(this); 
         this.add = this.add.bind(this); 
         this.cancelOrder = this.cancelOrder.bind(this);
+        this.delete = this.delete.bind(this); 
     }
 
     handleInput(event){
@@ -24,9 +23,12 @@ export class AppContextProvider  extends Component {
     }
 
     add(element){
+        const array = this.state.buttonValue
         array.push(element); 
+        const index = array.indexOf(element);
+        console.log(index)
         this.setState({
-            buttonValue: array 
+            buttonValue: array
         })
     }
 
@@ -36,6 +38,11 @@ export class AppContextProvider  extends Component {
             buttonValue: [],
         })
         alert('Se canceló la orden')
+    }
+
+    delete(element){
+
+        console.log(element); 
     }
 
     render() {
@@ -48,8 +55,10 @@ export class AppContextProvider  extends Component {
         const {
             cancelOrder,
         } = this.state;
+
+
         return(
-            <AppContext.Provider value={{menu, handleInput: this.handleInput, inputValue, add: this.add, buttonValue, cancelOrder: this.cancelOrder}}>
+            <AppContext.Provider value={{menu, handleInput: this.handleInput, inputValue, add: this.add, buttonValue, cancelOrder: this.cancelOrder, delete: this.delete}}>
                 {this.props.children}
             </AppContext.Provider>
         ); 
