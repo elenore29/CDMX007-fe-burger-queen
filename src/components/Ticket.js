@@ -3,6 +3,8 @@ import {AppContextConsumer} from '../store/index.js';
 import '../App.css';
 import Confirm from '../images/confirmar.png';
 import Cancel from '../images/cancelar_orden.png';
+import Edit from '../images/editar.png';
+import Delete from '../images/delete.png'; 
 
 class Ticket extends Component{
   render(){
@@ -12,15 +14,22 @@ class Ticket extends Component{
           return (
             <Fragment>
               <div className="ticket-box">
-                <div className="ticket">Ticket
+                <div className="ticket">
+                  <h4>Ticket</h4>
                   <div className="client-name2">{value.inputValue}</div>
                   <ul>
-                    {value.buttonValue.map(element => 
-                      <li key={element.id} style={{ listStyleType: "none" }} className="product-list">{element.id} 
-                      </li>
+                    {value.buttonValue.map(element =>
+                      <div key={element.id} className="product-box">
+                        <li style={{ listStyleType: "none" }} className="product-list">{element.id}
+                        </li>
+                        <li style={{ listStyleType: "none" }} className="product-price">${element.precio}</li>
+                      <button className="edit-item"><img className="icon-item" src={Edit} alt="Editar"></img></button> 
+                      <button className="delete-item"><img className="icon-item" src={Delete} alt="Eliminar"></img></button>
+                      </div> 
+                      
                     )}
                   </ul> 
-                  <div className="total">${value.buttonValue.reduce((accumulate, current)=>{
+                  <div className="total">$ {value.buttonValue.reduce((accumulate, current)=>{
                     return accumulate + Number(current.precio);
                   }, 0.00)}</div>
                 </div>

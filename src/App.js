@@ -43,7 +43,7 @@ handleRender() {
     return ( 
       <AppContextProvider>
         <Menu></Menu>
-        <button onClick={this.handleLogout} className="log-out"><img className="logout-icon" src={Logout}></img></button>
+        <button onClick={this.handleLogout} className="log-out"><img className="logout-icon" src={Logout} alt="Cerrar sesión"></img></button>
         <Ticket></Ticket>
       </AppContextProvider>
       )

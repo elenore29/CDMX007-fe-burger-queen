@@ -67,9 +67,17 @@ li {
   width: 100%; 
 }
 
+/* Routing */
+.route-link:hover {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #707070; 
+} 
+
 /* ticket */
 .ticket-box {
   background-color: #edf5f9;
+  width: 25%;
   height: 100vh; 
   display: flex;
   flex-direction: column; 
@@ -77,12 +85,12 @@ li {
 
 .ticket {
   background-color:#acb8bf; 
-  width: 70%; 
+  width: 90%; 
   height: 70%;
   margin-top: 15%;
   box-shadow: -4px 10px 10px 3px grey;
-  text-align: center; 
-  padding: 15%;
+  text-align: left; 
+  padding: 5%;
   color: white;  
   font-family: 'Roboto', sans-serif;
   font-size: 30px; 
@@ -99,14 +107,47 @@ li {
 
 .total {
   background-color: #d9e3e6; 
+  text-align: center; 
 }
 
 .product-list {
-  font-size: 20px; 
+  font-size: 15px; 
+  width: 50%;
+  padding-left: 0px; 
+  padding-top: 5px; 
 }
 
-.delete, .edit {
-  width: 20px; 
+.product-price {
+  font-size: 15px; 
+  width: 15%;
+  padding-left: 0px; 
+  padding-top: 5px; 
+  color: #f8d554;
+}
+
+.product-box {
+  display: flex; 
+  margin-top: 10px; 
+}
+
+.edit-item {
+  width: 35px; 
+  border: 0px;
+  background-color:#acb8bf; 
+}
+
+.delete-item {
+  width: 35px; 
+  border: 0px;
+  background-color:#acb8bf; 
+}
+
+.icon-item {
+  width: 100%; 
+}
+
+h4 {
+  text-align: center; 
 }
 
 /* Client */
@@ -142,7 +183,8 @@ li {
 .client-name2 {
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 35px; 
+  font-size: 25px; 
+  text-align: center; 
 }
 
 /* components */
@@ -162,6 +204,11 @@ li {
   float: left; 
   padding-top: 10px;  
   padding-bottom: 10px;    
+}
+
+.icon-container:hover {
+  border-style: solid;
+  border-width: 2px;
 }
 
 .menu-content {

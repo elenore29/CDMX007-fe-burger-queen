@@ -12,7 +12,7 @@ class Menu extends Component  {
     return(
       <Router>
         <Toolbar></Toolbar>
-        <Route path="/cliente" component={Client}/> 
+        <Route exact path="/" component={Client}/> 
         <Route path="/desayuno" component={Breakfast} />
         <Route path="/hamburguesas/" component={Hamburgers} />
         <Route path="/especificaciones/" component={Specifications} />
