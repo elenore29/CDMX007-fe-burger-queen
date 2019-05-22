@@ -10,7 +10,6 @@ class Extras extends Component {
           return ( 
             <div className="menu-container">
               <h1>EXTRAS</h1>
-              <p className="menu-title">+ $15</p>
               <div className="menu-content"> 
                 {value.menu.extras.map(element => 
                   <div key={element.id} className="menu-boxes"> 

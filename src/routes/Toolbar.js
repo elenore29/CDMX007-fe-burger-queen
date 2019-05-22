@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Logout from '../images/exit.png' 
 
 const ToolBar = ()=>
   <nav className="nav-box">
@@ -16,9 +15,6 @@ const ToolBar = ()=>
       </li>
       <li style={{ listStyleType: "none" }}>
         <Link to="/especificaciones/" className="menu-link">Especificaciones</Link>
-      </li>
-      <li style={{ listStyleType: "none" }}>
-        <Link to="/" className="menu-link"><img className="logout" src={Logout} alt="Cerrar Sesión"></img></Link>
       </li>
     </ul>
   </nav>

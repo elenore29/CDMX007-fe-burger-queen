@@ -9,8 +9,8 @@ class Hamburgers extends Component {
         {value => {
           return (  
             <div className="menu-container">
-              <h1>HAMBURGESAS 2</h1>
-              <p className="menu-title">SENCILLA $40</p>
+              <h1>HAMBURGESAS</h1>
+              <p className="menu-title">SENCILLAS</p>
               <div className="menu-content"> 
                 {value.menu.sencilla.map(element => 
                   <div key={element.id} className="menu-boxes"> 
@@ -24,7 +24,7 @@ class Hamburgers extends Component {
                   </div>
                 )}
               </div>
-              <p className="menu-title">DOBLE $55</p>
+              <p className="menu-title">DOBLES</p>
               <div className="menu-content"> 
                 {value.menu.doble.map(element => 
                   <div key={element.id} className="menu-boxes"> 

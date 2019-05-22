@@ -54,25 +54,47 @@ li {
   height: 100vh;
 }
 
+.log-out {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; 
+  width: 50px;  
+  border: 0px; 
+  background-color: #f8d554; 
+}
+
+.logout-icon {
+  width: 100%; 
+}
+
 /* ticket */
 .ticket-box {
   background-color: #edf5f9;
   height: 100vh; 
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column; 
 }
 
 .ticket {
   background-color:#acb8bf; 
-  width: 100%; 
+  width: 70%; 
   height: 70%;
   margin-top: 15%;
-  box-shadow: -4px 10px 15px 5px grey;
+  box-shadow: -4px 10px 10px 3px grey;
   text-align: center; 
   padding: 15%;
   color: white;  
   font-family: 'Roboto', sans-serif;
   font-size: 30px; 
+}
+
+.ticket-buttons{
+  width: 50%; 
+  height: 5%; 
+  background-color: #edf5f9;
+  border: 0px; 
+  margin-top: 30px;
+  display: inline-block;  
 }
 
 .total {
@@ -101,7 +123,7 @@ li {
 
 .burger-logo {
   padding-top: 10%; 
-  width: 50%; 
+  width: 35%; 
 }
 
 .client-name {

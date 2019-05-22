@@ -15,7 +15,7 @@ class Specifications extends Component {
               <header className="App-header">
                 <img className="burger-logo" src={logo} alt="Logo"></img>
                 <h1>ESPECIFICACIONES</h1>
-                <p className="menu-title">Selecciona para agregar porción extra o quitar</p>
+                <p className="menu-title">Selecciona para agregar una porción extra o quitar</p>
                 <div className="menu-content"> 
                   {value.menu.especificaciones.map(element => 
                     <div key={element.id} className="menu-boxes"> 

@@ -10,7 +10,6 @@ class Bebidas extends Component {
           return ( 
             <div className="menu-container">
               <h1>BEBIDAS</h1>
-              <p className="menu-title">Elige una bebida</p>
               <div className="menu-content"> 
                 {value.menu.bebidas.map(element => 
                   <div key={element.id} className="menu-boxes"> 

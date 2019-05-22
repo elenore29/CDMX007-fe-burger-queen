@@ -1,6 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import {AppContextConsumer} from '../store/index.js';
 import '../App.css';
+import Confirm from '../images/confirmar.png';
+import Cancel from '../images/cancelar_orden.png';
 
 class Ticket extends Component{
   render(){
@@ -21,6 +23,10 @@ class Ticket extends Component{
                   <div className="total">${value.buttonValue.reduce((accumulate, current)=>{
                     return accumulate + Number(current.precio);
                   }, 0.00)}</div>
+                </div>
+                <div>
+                  <button className="ticket-buttons"><img src={Confirm} alt="Enviar"></img></button> 
+                  <button className="ticket-buttons"><img src={Cancel} alt="Cancelar"></img></button>
                 </div>
               </div>
             </Fragment> 

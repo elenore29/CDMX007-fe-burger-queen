@@ -10,7 +10,6 @@ class Guarniciones extends Component {
           return ( 
             <div className="menu-container">
               <h1>GUARNICIÓN</h1>
-              <p className="menu-title">+ $15</p>
               <div className="menu-content"> 
                 {value.menu.guarniciones.map(element => 
                   <div key={element.id} className="menu-boxes"> 
