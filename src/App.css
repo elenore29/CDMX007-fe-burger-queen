@@ -268,3 +268,7 @@ h1 {
   height: 50px; 
   margin-left: 20px; 
 }
+
+.mini-icon2:hover {
+  height: 60px;
+}
