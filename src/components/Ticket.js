@@ -25,8 +25,7 @@ class Ticket extends Component{
                         <li style={{ listStyleType: "none" }} className="product-price">${element.precio}</li>
                       <button className="edit-item"><img className="icon-item" src={Edit} alt="Editar"></img></button> 
                       <button className="delete-item"><img className="icon-item" src={Delete} alt="Eliminar"></img></button>
-                      </div> 
-                      
+                      </div>                
                     )}
                   </ul> 
                   <div className="total">$ {value.buttonValue.reduce((accumulate, current)=>{
@@ -35,7 +34,7 @@ class Ticket extends Component{
                 </div>
                 <div>
                   <button className="ticket-buttons"><img src={Confirm} alt="Enviar"></img></button> 
-                  <button className="ticket-buttons"><img src={Cancel} alt="Cancelar"></img></button>
+                  <button className="ticket-buttons"><img onClick={value.cancelOrder} src={Cancel} alt="Cancelar"></img></button>
                 </div>
               </div>
             </Fragment> 

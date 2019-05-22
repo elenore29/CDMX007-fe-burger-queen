@@ -13,6 +13,7 @@ export class AppContextProvider  extends Component {
         }
         this.handleInput = this.handleInput.bind(this); 
         this.add = this.add.bind(this); 
+        this.cancelOrder = this.cancelOrder.bind(this);
     }
 
     handleInput(event){
@@ -29,6 +30,14 @@ export class AppContextProvider  extends Component {
         })
     }
 
+    cancelOrder(){
+        this.setState({
+            inputValue: '',
+            buttonValue: [],
+        })
+        alert('Se canceló la orden')
+    }
+
     render() {
         const {
             inputValue,
@@ -36,8 +45,11 @@ export class AppContextProvider  extends Component {
         const {
             buttonValue,
         } = this.state;
+        const {
+            cancelOrder,
+        } = this.state;
         return(
-            <AppContext.Provider value={{menu, handleInput: this.handleInput, inputValue, add: this.add, buttonValue}}>
+            <AppContext.Provider value={{menu, handleInput: this.handleInput, inputValue, add: this.add, buttonValue, cancelOrder: this.cancelOrder}}>
                 {this.props.children}
             </AppContext.Provider>
         ); 
