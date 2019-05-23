@@ -13,23 +13,23 @@ const MiniRouter = () => {
   return (
     <Router>
       <div className="mini-menu">
-        <Route path="/hamburguesas" component={Hamburgers} />
-        <Route path="/bebidas" exact component={Drinks} />
-        <Route path="/guarniciones/" component={Guarniciones} />
-        <Route path="/extras/" component={Extras} />
+        <Route exact path="/hamburguesas" component={Hamburgers} />
+        <Route path="/hamburguesas/bebidas" exact component={Drinks} />
+        <Route path="/hamburguesas/guarniciones/" component={Guarniciones} />
+        <Route path="/hamburguesas/extras/" component={Extras} />
         <nav className="mini-menu2">
           <ul className="mini">
             <li className="mini-icon" style={{ listStyleType: "none" }}>
               <Link to="/hamburguesas/" ><img className="mini-icon2" src={Burger} alt="Hamburguesas"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/bebidas/"><img className="mini-icon2" src={Soda} alt="Bebidas"></img></Link>
+              <Link to="/hamburguesas/bebidas/"><img className="mini-icon2" src={Soda} alt="Bebidas"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/guarniciones/"><img className="mini-icon2" src={Fries} alt="Guarniciones"></img></Link>
+              <Link to="/hamburguesas/guarniciones/"><img className="mini-icon2" src={Fries} alt="Guarniciones"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/extras/"><img className="mini-icon2" src={Egg} alt="Extras"></img></Link>
+              <Link to="/hamburguesas/extras/"><img className="mini-icon2" src={Egg} alt="Extras"></img></Link>
             </li>
           </ul>
         </nav>
