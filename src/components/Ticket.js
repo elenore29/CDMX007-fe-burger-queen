@@ -18,7 +18,7 @@ class Ticket extends Component{
                   <h4>Ticket</h4>
                   <div className="client-name2">{value.inputValue}</div>
                   <ul>
-                    {value.buttonValue.map(element =>
+                    {value.order.map(element =>
                       <div key={element.id} className="product-box">
                         <li style={{ listStyleType: "none" }} className="product-list">{element.id}
                         </li>
@@ -28,7 +28,7 @@ class Ticket extends Component{
                       </div>                
                     )}
                   </ul> 
-                  <div className="total">$ {value.buttonValue.reduce((accumulate, current)=>{
+                  <div className="total">$ {value.order.reduce((accumulate, current)=>{
                     return accumulate + Number(current.precio);
                   }, 0.00)}</div>
                 </div>

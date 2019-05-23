@@ -7,7 +7,7 @@ export class AppContextProvider  extends Component {
         super(props); 
         this.state = {
             inputValue: '',
-            buttonValue: [], 
+            order: [], 
         }
         this.handleInput = this.handleInput.bind(this); 
         this.add = this.add.bind(this); 
@@ -23,26 +23,28 @@ export class AppContextProvider  extends Component {
     }
 
     add(element){
-        const array = this.state.buttonValue
+        const array = this.state.order
         array.push(element); 
-        const index = array.indexOf(element);
-        console.log(index)
         this.setState({
-            buttonValue: array
+            order: array
         })
+    }
+    
+    delete=(element) =>{
+        const order = this.state.order.filter(order => {
+            return order.id !== element.id; 
+        });     
+        this.setState({
+            order: order
+        });
     }
 
     cancelOrder(){
         this.setState({
             inputValue: '',
-            buttonValue: [],
+            order: [],
         })
         alert('Se canceló la orden')
-    }
-
-    delete(element){
-
-        console.log(element); 
     }
 
     render() {
@@ -50,15 +52,13 @@ export class AppContextProvider  extends Component {
             inputValue,
         } = this.state;
         const {
-            buttonValue,
+            order,
         } = this.state;
-        const {
-            cancelOrder,
-        } = this.state;
+    
 
 
         return(
-            <AppContext.Provider value={{menu, handleInput: this.handleInput, inputValue, add: this.add, buttonValue, cancelOrder: this.cancelOrder, delete: this.delete}}>
+            <AppContext.Provider value={{menu, handleInput: this.handleInput, inputValue, add: this.add, order, cancelOrder: this.cancelOrder, delete: this.delete}}>
                 {this.props.children}
             </AppContext.Provider>
         ); 
@@ -66,3 +66,4 @@ export class AppContextProvider  extends Component {
 }
 
 export const AppContextConsumer = AppContext.Consumer; 
+
