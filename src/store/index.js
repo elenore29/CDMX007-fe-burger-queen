@@ -29,13 +29,11 @@ export class AppContextProvider  extends Component {
         })
     }
     
-    delete = (element, index) =>{
-        console.log(element)
-        console.log(index)
+    delete = (element) =>{
+       
         const order = this.state.order.filter(order => {
             return order.id !== element.id; 
         });    
-        console.log(order) 
         this.setState({
             order: order
         });
@@ -43,11 +41,9 @@ export class AppContextProvider  extends Component {
 
     cancelOrder(){
         const estado = this.state.order
-        console.log(estado)
         if(estado.length === 0){
             alert('No hay orden que cancelar')
         } else {
-            console.log(estado)
         this.setState({
             inputValue: '',
             order: [],
@@ -64,8 +60,6 @@ export class AppContextProvider  extends Component {
             order,
         } = this.state;
     
-
-        console.log(order)
         return(
             <AppContext.Provider 
                 value={{

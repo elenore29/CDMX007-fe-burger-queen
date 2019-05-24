@@ -5,21 +5,25 @@
             "id": "Hamburguesa sencilla de res",
             "tamano": "Sencilla",
             "precio": "40.00",
-            "img": "https://i.ibb.co/9YvyPRG/sencilla.png"
+            "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
+            "quantity": 1
         },
         {
             "producto": "Pollo",
             "id": "Hamburguesa sencilla de pollo",
             "tamano": "Sencilla",
             "precio": "40.00",
-            "img": "https://i.ibb.co/9YvyPRG/sencilla.png"
+            "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
+            "quantity": 1
+
         },
         {
             "producto": "Vegetariana",
             "id": "Hamburguesa sencilla vegetariana",
             "tamano": "Sencilla",
             "precio": "40.00",
-            "img": "https://i.ibb.co/9YvyPRG/sencilla.png"
+            "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
+            "quantity": 1
         }
     ],
     "doble": [
@@ -28,21 +32,24 @@
             "id": "Hamburguesa doble de res",
             "tamano": "Doble",
             "precio": "55.00",
-            "img": "https://i.ibb.co/ccmj7ym/hamburger.png"
+            "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
+            "quantity": 1
         }, 
         {
             "producto": "Pollo",
             "id": "Hamburguesa doble de pollo",
             "tamano": "Doble",
             "precio": "55.00",
-            "img": "https://i.ibb.co/ccmj7ym/hamburger.png"
+            "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
+            "quantity": 1
         },
         {
             "producto": "Vegetariana",
             "id": "Hamburguesa doble vegetariana",
             "tamano": "Doble",
             "precio": "55.00",
-            "img": "https://i.ibb.co/ccmj7ym/hamburger.png"
+            "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
+            "quantity": 1
         }
     ],
     "desayuno": [
@@ -50,25 +57,29 @@
             "producto": "Sándwich",
             "id": "Sándwich de jamón con queso",
             "precio": "35.00", 
-            "img": "https://i.ibb.co/17yZs3T/sandwich.png"
+            "img": "https://i.ibb.co/17yZs3T/sandwich.png",
+            "quantity": 1
         }, 
         {
             "producto": "Café",
             "id": "Café",
             "precio": "20.00", 
-            "img": "https://i.ibb.co/5Mj4BXx/coffee.png"
+            "img": "https://i.ibb.co/5Mj4BXx/coffee.png",
+            "quantity": 1
         },
         {
             "producto": "Café con leche",
             "id": "Café con leche",
             "precio": "28.00", 
-            "img": "https://i.ibb.co/5Mj4BXx/coffee.png"
+            "img": "https://i.ibb.co/5Mj4BXx/coffee.png",
+            "quantity": 1
         },
         {
             "producto": "Jugo",
             "id": "Jugo",
             "precio": "15.00", 
-            "img": "https://i.ibb.co/ScWCbnK/jugo.png"
+            "img": "https://i.ibb.co/ScWCbnK/jugo.png",
+            "quantity": 1
         }
     ],
     "especificaciones": [
@@ -108,13 +119,15 @@
             "producto": "Agua",
             "id": "Agua",
             "precio": "10.00", 
-            "img": "https://i.ibb.co/dgHPxB2/agua.png"
+            "img": "https://i.ibb.co/dgHPxB2/agua.png",
+            "quantity": 1
         },
         {
             "producto": "Refresco",
             "id": "Refresco",
             "precio": "10.00", 
-            "img": "https://i.ibb.co/XJPk2JZ/beverage.png"
+            "img": "https://i.ibb.co/XJPk2JZ/beverage.png",
+            "quantity": 1
         }
     ],
     "guarniciones": [
@@ -122,13 +135,15 @@
             "producto": "Papas fritas",
             "id": "Papas fritas",
             "precio": "15.00", 
-            "img": "https://i.ibb.co/hcMZXcz/french-fries2.png"
+            "img": "https://i.ibb.co/hcMZXcz/french-fries2.png",
+            "quantity": 1
         },
         {
             "producto": "Aros de cebolla",
             "id": "Aros de cebolla",
             "precio": "15.00", 
-            "img": "https://i.ibb.co/xMJY8Vd/onion-rings.png"
+            "img": "https://i.ibb.co/xMJY8Vd/onion-rings.png",
+            "quantity": 1
         }
     ],
     "extras": [
@@ -136,13 +151,15 @@
             "producto": "Huevo",
             "id": "Huevo",
             "precio": "15.00", 
-            "img": "https://i.ibb.co/3cGqzJv/egg.png"
+            "img": "https://i.ibb.co/3cGqzJv/egg.png",
+            "quantity": 1
         },
         {
             "producto": "Queso",
             "id": "Queso",
             "precio": "15.00", 
-            "img": "https://i.ibb.co/hFSvGp6/cheese-3.png"
+            "img": "https://i.ibb.co/hFSvGp6/cheese-3.png",
+            "quantity": 1
         }
     ]
 }
