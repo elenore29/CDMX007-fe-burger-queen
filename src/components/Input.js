@@ -1,36 +1,26 @@
 import React, {Component} from 'react';
-import './Client.css';
+import {AppContextConsumer} from '../store/index.js';
+import '../App.css';
 
 class Input extends Component {
-    constructor(props) {
-        super(props)
-            this.state = {
-                value: ''
-            }
-    };
-    
-    handleInput(event){
-        const valor = event.target.value;
-        console.log(valor)
-        this.setState({
-            value: valor
-        });
-        this.props.handleClientName(valor) 
-    }
-  
     render() {
         return ( 
-            <div>
-                <input className="client-name" placeholder=" Nombre del cliente" 
-                type="text" onChange={this.handleInput.bind(this)} value={this.value}></input>
-                <div className="client-name2">{this.state.value}</div>
-            </div>
+            <AppContextConsumer>
+                {value => {
+                    return (  
+                        <div>
+                            <input className="client-name" placeholder=" Nombre del cliente" type="text"  onChange={value.handleInput} value={value.inputValue} ></input>
+                        </div>
+                    )
+                }} 
+            </AppContextConsumer>
         )
-      }
+    }
 }
     
 export default Input;
 
+ 
 
 
  
