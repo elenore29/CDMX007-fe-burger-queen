@@ -32,7 +32,7 @@ class Ticket extends Component{
                       </ul> 
                     </div>
                     <div className="total">$ {value.order.reduce((accumulate, current)=>{
-                    return accumulate + Number(current.precio);}, 0.00)}</div>
+                    return accumulate + current.total;}, 0.00)}</div>
                   </div>
                   <div className="cancel-confirm"> 
                     <button className="ticket-buttons"><img src={Confirm} alt="Enviar"></img></button> 
