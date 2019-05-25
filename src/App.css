@@ -94,6 +94,7 @@ li {
   color: white;  
   font-family: 'Roboto', sans-serif;
   font-size: 30px; 
+  margin-bottom: 20px;
 }
 
 .list {
@@ -109,7 +110,12 @@ li {
   background-color: #edf5f9;
   border: 0px; 
   display: inline-block;  
-  margin: 25px 0px;
+  margin: 10px 0px;
+}
+
+.btn:hover {
+  background-color: #f8d554; 
+  border-radius: 100%;
 }
 
 .cancel-confirm {
@@ -183,6 +189,13 @@ li {
 
 h4 {
   text-align: center; 
+}
+
+.onAlert {
+  color: red; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
 
 /* Client */

@@ -10,6 +10,11 @@ export class AppContextProvider  extends Component {
             inputValue: '',
             order: [], 
             isModalOpen: false,
+            isModalOpen2: false,
+            onAlert: false,
+            onAlert2: false,
+            onAlert3: false,
+            onAlert4: false,
         }
         this.handleInput = this.handleInput.bind(this); 
         this.add = this.add.bind(this); 
@@ -62,12 +67,14 @@ export class AppContextProvider  extends Component {
     cancelOrder = () => {
         const estado = this.state.order;
         if(estado.length === 0){
-            alert('No hay orden que cancelar')
+            this.setState({
+                onAlert: !this.state.onAlert,
+            })        
         } else {
             this.setState({
                 inputValue: '',
                 order: [],
-                isModalOpen: !this.state.isModalOpen,
+                isModalOpen2: !this.state.isModalOpen2,
             })
         }
     }
@@ -77,11 +84,17 @@ export class AppContextProvider  extends Component {
         const fullOrder = this.state.order; 
         const clientName = this.state.inputValue;
         if(fullOrder.length === 0 && clientName === ''){
-            alert('Escribe el nombre del cliente y elije un producto')
+            this.setState({
+                onAlert2: !this.state.onAlert2,
+            })  
             } else if (fullOrder.length === 0) {
-                alert('Elije un producto')
+                this.setState({
+                    onAlert3: !this.state.onAlert3,
+                })  
             } else if (clientName === '') {
-                alert('Introduce el nombre del cliente')
+                this.setState({
+                    onAlert4: !this.state.onAlert4,
+                }) 
             } else {
                 db.collection("orders").add({
                     name: clientName,
@@ -108,6 +121,12 @@ export class AppContextProvider  extends Component {
         })
     }
 
+    toggleModal2 = () => {
+        this.setState({
+            isModalOpen2: !this.state.isModalOpen2,
+        })
+    }
+
     render() {
         const {
             inputValue,
@@ -118,6 +137,21 @@ export class AppContextProvider  extends Component {
         const {
             isModalOpen,
         } = this.state;
+        const {
+            isModalOpen2,
+        } = this.state;
+        const {
+            onAlert,
+        } = this.state;
+        const {
+            onAlert2,
+        } = this.state;
+        const {
+            onAlert3,
+        } = this.state;
+        const {
+            onAlert4,
+        } = this.state;
     
         return(
             <AppContext.Provider 
@@ -126,12 +160,18 @@ export class AppContextProvider  extends Component {
                     order, 
                     inputValue, 
                     isModalOpen,
+                    isModalOpen2,
+                    onAlert,
+                    onAlert2,
+                    onAlert3,
+                    onAlert4,
                     add: this.add, 
                     delete: this.delete,
                     handleInput: this.handleInput, 
                     cancelOrder: this.cancelOrder,
                     confirmOrder: this.confirmOrder, 
                     toggleModal: this.toggleModal,
+                    toggleModal2: this.toggleModal2,
                 }}>
                 {this.props.children}
             </AppContext.Provider>

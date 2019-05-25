@@ -7,6 +7,10 @@ import editBtn from '../images/editar.png';
 import deleteBtn from '../images/delete.png'; 
 import Modal from './Modal.js';
 import ModalToCancel from './Modal2.js'; 
+import OnAlert from './OnAlert.js';
+import OnAlert2 from './OnAlert2.js';
+import OnAlert3 from './OnAlert3.js';
+import OnAlert4 from './OnAlert4.js';
 
 class Ticket extends Component{
   render(){
@@ -19,6 +23,10 @@ class Ticket extends Component{
                 <div className="ticket2">
                   <div className="ticket">
                     <h4>Ticket</h4>
+                    {value.onAlert && <OnAlert />}
+                    {value.onAlert2 && <OnAlert2 />}
+                    {value.onAlert3 && <OnAlert3 />}
+                    {value.onAlert4 && <OnAlert4 />}
                     <div className="client-name2">{value.inputValue}</div>
                     <div className="list">
                       <ul>
@@ -37,13 +45,13 @@ class Ticket extends Component{
                     return accumulate + current.total;}, 0.00)}</div>
                   </div>
                   <div className="cancel-confirm"> 
-                    <button className="ticket-buttons"><img onClick={value.cancelOrder} src={cancel} alt="Cancelar"></img></button>
-                    <button className="ticket-buttons"><img onClick={value.confirmOrder} src={confirm} alt="Enviar"></img></button> 
+                    <button className="ticket-buttons"><img className="btn" onClick={value.cancelOrder} src={cancel} alt="Cancelar"></img></button>
+                    <button className="ticket-buttons"><img className="btn" onClick={value.confirmOrder} src={confirm} alt="Enviar"></img></button> 
                   </div>
                 </div>
               </div>
               {value.isModalOpen && <Modal />}
-              {value.isModalOpen && <ModalToCancel />}
+              {value.isModalOpen2 && <ModalToCancel />}
             </Fragment> 
           )
         }} 
