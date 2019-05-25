@@ -12,7 +12,7 @@ class ModalToCancel extends Component{
             <Fragment>
                 <div onClick={(e) => { 
                     if(e.target.className === 'modal-container'){
-                        value.toggleModal();
+                        value.toggleModal2();
                     }
                 }}
                      className="modal-container">
