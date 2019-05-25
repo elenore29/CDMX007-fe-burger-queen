@@ -7,6 +7,7 @@
             "precio": 40.00,
             "total": 40.00,
             "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
+            "specifications": "Con todo", 
             "quantity": 1
         },
         {
@@ -16,6 +17,7 @@
             "precio": 40.00,
             "total": 40,
             "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
+            "specifications": "Con todo", 
             "quantity": 1
 
         },
@@ -26,6 +28,7 @@
             "precio": 40.00,
             "total": 40.00,
             "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
+            "specifications": "Con todo", 
             "quantity": 1
         }
     ],
@@ -37,6 +40,7 @@
             "precio": 55.00,
             "total": 55.00,
             "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
+            "specifications": "Con todo", 
             "quantity": 1
         }, 
         {
@@ -46,6 +50,7 @@
             "precio": 55.00,
             "total": 55.00,
             "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
+            "specifications": "Con todo", 
             "quantity": 1
         },
         {
@@ -55,6 +60,7 @@
             "precio": 55.00,
             "total": 55.00,
             "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
+            "specifications": "Con todo", 
             "quantity": 1
         }
     ],
@@ -65,6 +71,7 @@
             "precio": 35.00,
             "total": 35.00, 
             "img": "https://i.ibb.co/17yZs3T/sandwich.png",
+            "specifications": "Con todo", 
             "quantity": 1
         }, 
         {
@@ -73,6 +80,7 @@
             "precio": 20.00, 
             "total": 20.00,
             "img": "https://i.ibb.co/5Mj4BXx/coffee.png",
+            "specifications": "Con todo", 
             "quantity": 1
         },
         {
@@ -81,6 +89,7 @@
             "precio": 28.00, 
             "total": 28.00,
             "img": "https://i.ibb.co/5Mj4BXx/coffee.png",
+            "specifications": "Con todo", 
             "quantity": 1
         },
         {
@@ -89,6 +98,7 @@
             "precio": 15.00, 
             "total": 15.00,
             "img": "https://i.ibb.co/ScWCbnK/jugo.png",
+            "specifications": "Con todo", 
             "quantity": 1
         }
     ],
@@ -131,6 +141,7 @@
             "precio": 10.00, 
             "total": 10.00,
             "img": "https://i.ibb.co/dgHPxB2/agua.png",
+            "specifications": "Con todo", 
             "quantity": 1
         },
         {
@@ -139,6 +150,7 @@
             "precio": 10.00, 
             "total": 10.00,
             "img": "https://i.ibb.co/XJPk2JZ/beverage.png",
+            "specifications": "Con todo", 
             "quantity": 1
         }
     ],
@@ -149,6 +161,7 @@
             "precio": 15.00, 
             "total": 15.00,
             "img": "https://i.ibb.co/hcMZXcz/french-fries2.png",
+            "specifications": "Con todo", 
             "quantity": 1
         },
         {
@@ -157,6 +170,7 @@
             "precio": 15.00,
             "total": 15.00, 
             "img": "https://i.ibb.co/xMJY8Vd/onion-rings.png",
+            "specifications": "Con todo", 
             "quantity": 1
         }
     ],
@@ -167,6 +181,7 @@
             "precio": 15.00,
             "total": 15.00,  
             "img": "https://i.ibb.co/3cGqzJv/egg.png",
+            "specifications": "Con todo", 
             "quantity": 1
         },
         {
@@ -175,6 +190,7 @@
             "precio": 15.00, 
             "total": 15.00, 
             "img": "https://i.ibb.co/hFSvGp6/cheese-3.png",
+            "specifications": "Con todo", 
             "quantity": 1
         }
     ]
