@@ -11,7 +11,6 @@ class Ticket extends Component{
     return ( 
       <AppContextConsumer>
         {value => {
-          console.log(value.order)
           return (
             <Fragment>
               <div className="ticket-box">
@@ -25,7 +24,7 @@ class Ticket extends Component{
                         </li>
                         <li style={{ listStyleType: "none" }} className="product-price">${element.precio}</li>
                       <button className="edit-item"><img className="icon-item" src={Edit} alt="Editar"></img></button> 
-                      <button  onClick={()=>value.delete(element, index)} className="delete-item"><img className="icon-item" src={Delete} alt="Eliminar"></img></button>
+                      <button  onClick={()=>value.delete(element)} className="delete-item"><img className="icon-item" src={Delete} alt="Eliminar"></img></button>
                       </div>                
                     )}
                   </ul> 
