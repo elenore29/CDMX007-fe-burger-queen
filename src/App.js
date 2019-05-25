@@ -5,7 +5,7 @@ import logo from './images/logo.png';
 import React, { Component} from 'react';
 import {AppContextProvider} from './store/index.js'; 
 import firebase from 'firebase'; 
-import Logout from './images/exit.png'; 
+import logout from './images/exit.png'; 
 
 class App extends Component {
   constructor(props) {
@@ -43,7 +43,7 @@ handleRender() {
     return ( 
       <AppContextProvider>
         <Menu></Menu>
-        <button onClick={this.handleLogout} className="log-out"><img className="logout-icon" src={Logout} alt="Cerrar sesión"></img></button>
+        <button onClick={this.handleLogout} className="log-out"><img className="logout-icon" src={logout} alt="Cerrar sesión"></img></button>
         <Ticket></Ticket>
       </AppContextProvider>
       )

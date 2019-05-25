@@ -307,3 +307,31 @@ h1 {
 .mini-icon2:hover {
   height: 60px;
 }
+
+/* Modal */
+.modal-container {
+  position: fixed; 
+  padding-top: 10%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100vh; 
+  background-color: rgba(217,227,230,0.6); 
+}
+
+.modal {
+  background-color: #f8d554; 
+  border: 0px;
+  width: 80%;
+  height: 80%;
+  color: #707070; 
+  padding: 10%;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.modal-title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px; 
+}

@@ -9,12 +9,14 @@ export class AppContextProvider  extends Component {
         this.state = {
             inputValue: '',
             order: [], 
+            isModalOpen: false,
         }
         this.handleInput = this.handleInput.bind(this); 
         this.add = this.add.bind(this); 
         this.cancelOrder = this.cancelOrder.bind(this);
         this.delete = this.delete.bind(this); 
         this.confirmOrder = this.confirmOrder.bind(this); 
+        this.toggleModal = this.toggleModal.bind(this); 
     }
 
     handleInput = (event) => {
@@ -62,11 +64,11 @@ export class AppContextProvider  extends Component {
         if(estado.length === 0){
             alert('No hay orden que cancelar')
         } else {
-        this.setState({
-            inputValue: '',
-            order: [],
-        })
-        alert('Se canceló la orden')
+            this.setState({
+                inputValue: '',
+                order: [],
+                isModalOpen: !this.state.isModalOpen,
+            })
         }
     }
 
@@ -81,7 +83,6 @@ export class AppContextProvider  extends Component {
             } else if (clientName === '') {
                 alert('Introduce el nombre del cliente')
             } else {
-                alert('La orden se ha enviado a la cocina')
                 db.collection("orders").add({
                     name: clientName,
                     orden: fullOrder,
@@ -96,8 +97,15 @@ export class AppContextProvider  extends Component {
                 this.setState({
                     inputValue: '',
                     order: [],
+                    isModalOpen: !this.state.isModalOpen,
                 })
             }
+    };
+
+    toggleModal = () => {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen,
+        })
     }
 
     render() {
@@ -107,6 +115,9 @@ export class AppContextProvider  extends Component {
         const {
             order,
         } = this.state;
+        const {
+            isModalOpen,
+        } = this.state;
     
         return(
             <AppContext.Provider 
@@ -114,11 +125,13 @@ export class AppContextProvider  extends Component {
                     menu, 
                     order, 
                     inputValue, 
+                    isModalOpen,
                     add: this.add, 
                     delete: this.delete,
                     handleInput: this.handleInput, 
                     cancelOrder: this.cancelOrder,
                     confirmOrder: this.confirmOrder, 
+                    toggleModal: this.toggleModal,
                 }}>
                 {this.props.children}
             </AppContext.Provider>

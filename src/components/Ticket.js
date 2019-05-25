@@ -5,6 +5,8 @@ import confirm from '../images/confirmar.png';
 import cancel from '../images/cancelar_orden.png';
 import editBtn from '../images/editar.png';
 import deleteBtn from '../images/delete.png'; 
+import Modal from './Modal.js';
+import ModalToCancel from './Modal2.js'; 
 
 class Ticket extends Component{
   render(){
@@ -35,11 +37,13 @@ class Ticket extends Component{
                     return accumulate + current.total;}, 0.00)}</div>
                   </div>
                   <div className="cancel-confirm"> 
-                    <button className="ticket-buttons"><img onClick={value.confirmOrder} src={confirm} alt="Enviar"></img></button> 
                     <button className="ticket-buttons"><img onClick={value.cancelOrder} src={cancel} alt="Cancelar"></img></button>
+                    <button className="ticket-buttons"><img onClick={value.confirmOrder} src={confirm} alt="Enviar"></img></button> 
                   </div>
                 </div>
               </div>
+              {value.isModalOpen && <Modal />}
+              {value.isModalOpen && <ModalToCancel />}
             </Fragment> 
           )
         }} 
