@@ -66,7 +66,7 @@ export class AppContextProvider  extends Component {
             order: [],
         })
         alert('Se canceló la orden')
-    }
+        }
     }
 
     render() {
