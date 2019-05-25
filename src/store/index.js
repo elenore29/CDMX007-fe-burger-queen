@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import menu from '../components/menu.json'; 
-import { thisTypeAnnotation } from '@babel/types';
+import firebase from 'firebase'; 
 export const AppContext = React.createContext(); 
 
 export class AppContextProvider  extends Component {
@@ -14,6 +14,7 @@ export class AppContextProvider  extends Component {
         this.add = this.add.bind(this); 
         this.cancelOrder = this.cancelOrder.bind(this);
         this.delete = this.delete.bind(this); 
+        this.confirmOrder = this.confirmOrder.bind(this); 
     }
 
     handleInput = (event) => {
@@ -57,7 +58,7 @@ export class AppContextProvider  extends Component {
     }
 
     cancelOrder = () => {
-        const estado = this.state.order
+        const estado = this.state.order;
         if(estado.length === 0){
             alert('No hay orden que cancelar')
         } else {
@@ -67,6 +68,36 @@ export class AppContextProvider  extends Component {
         })
         alert('Se canceló la orden')
         }
+    }
+
+    confirmOrder = () => {
+        var db = firebase.firestore();
+        const fullOrder = this.state.order; 
+        const clientName = this.state.inputValue;
+        if(fullOrder.length === 0 && clientName === ''){
+            alert('Escribe el nombre del cliente y elije un producto')
+            } else if (fullOrder.length === 0) {
+                alert('Elije un producto')
+            } else if (clientName === '') {
+                alert('Introduce el nombre del cliente')
+            } else {
+                alert('La orden se ha enviado a la cocina')
+                db.collection("orders").add({
+                    name: clientName,
+                    orden: fullOrder,
+                    date: firebase.firestore.FieldValue.serverTimestamp()
+                })
+                .then(function(docRef) {
+                    console.log("Document written with ID: ", docRef.id);
+                })
+                .catch(function(error) {
+                    console.error("Error adding document: ", error);
+                });
+                this.setState({
+                    inputValue: '',
+                    order: [],
+                })
+            }
     }
 
     render() {
@@ -86,7 +117,8 @@ export class AppContextProvider  extends Component {
                     add: this.add, 
                     delete: this.delete,
                     handleInput: this.handleInput, 
-                    cancelOrder: this.cancelOrder, 
+                    cancelOrder: this.cancelOrder,
+                    confirmOrder: this.confirmOrder, 
                 }}>
                 {this.props.children}
             </AppContext.Provider>

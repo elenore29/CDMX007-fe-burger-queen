@@ -4,10 +4,10 @@ import Hamburgers from '../routes/Hamburgers2.js';
 import Drinks from './Bebidas.js';
 import Guarniciones from './Guarniciones.js'; 
 import Extras from './Extras.js'; 
-import Fries from '../images/french_fries.png';
-import Soda from '../images/refresco.png';
-import Egg from '../images/blue_egg.png'; 
-import Burger from '../images/blue_burger.png'; 
+import fries from '../images/french_fries.png';
+import soda from '../images/refresco.png';
+import egg from '../images/blue_egg.png'; 
+import burger from '../images/blue_burger.png'; 
 
 const MiniRouter = () => {
   return (
@@ -20,16 +20,16 @@ const MiniRouter = () => {
         <nav className="mini-menu2">
           <ul className="mini">
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/hamburguesas/" ><img className="mini-icon2" src={Burger} alt="Hamburguesas"></img></Link>
+              <Link to="/hamburguesas/" ><img className="mini-icon2" src={burger} alt="Hamburguesas"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/hamburguesas/bebidas/"><img className="mini-icon2" src={Soda} alt="Bebidas"></img></Link>
+              <Link to="/hamburguesas/bebidas/"><img className="mini-icon2" src={soda} alt="Bebidas"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/hamburguesas/guarniciones/"><img className="mini-icon2" src={Fries} alt="Guarniciones"></img></Link>
+              <Link to="/hamburguesas/guarniciones/"><img className="mini-icon2" src={fries} alt="Guarniciones"></img></Link>
             </li>
             <li className="mini-icon" style={{ listStyleType: "none" }}>
-              <Link to="/hamburguesas/extras/"><img className="mini-icon2" src={Egg} alt="Extras"></img></Link>
+              <Link to="/hamburguesas/extras/"><img className="mini-icon2" src={egg} alt="Extras"></img></Link>
             </li>
           </ul>
         </nav>
