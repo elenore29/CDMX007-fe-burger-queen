@@ -1,10 +1,10 @@
 import React, {Component, Fragment} from 'react';
 import {AppContextConsumer} from '../store/index.js';
 import '../App.css';
-import Confirm from '../images/confirmar.png';
-import Cancel from '../images/cancelar_orden.png';
-import Edit from '../images/editar.png';
-import Delete from '../images/delete.png'; 
+import confirm from '../images/confirmar.png';
+import cancel from '../images/cancelar_orden.png';
+import editBtn from '../images/editar.png';
+import deleteBtn from '../images/delete.png'; 
 
 class Ticket extends Component{
   render(){
@@ -25,8 +25,8 @@ class Ticket extends Component{
                             <li style={{ listStyleType: "none" }} className="product-quantity">{element.quantity}</li>
                             <li style={{ listStyleType: "none" }} className="product-list">{element.id}</li>
                             <li style={{ listStyleType: "none" }} className="product-price">${element.precio}</li>
-                            <button className="edit-item"><img className="icon-item2" src={Edit} alt="Editar"></img></button> 
-                            <button  onClick={()=>value.delete(element, index)} className="delete-item"><img className="icon-item" src={Delete} alt="Eliminar"></img></button>
+                            <button className="edit-item"><img className="icon-item2" src={editBtn} alt="Editar"></img></button> 
+                            <button  onClick={()=>value.delete(element, index)} className="delete-item"><img className="icon-item" src={deleteBtn} alt="Eliminar"></img></button>
                           </div>                
                         )}
                       </ul> 
@@ -35,8 +35,8 @@ class Ticket extends Component{
                     return accumulate + current.total;}, 0.00)}</div>
                   </div>
                   <div className="cancel-confirm"> 
-                    <button className="ticket-buttons"><img src={Confirm} alt="Enviar"></img></button> 
-                    <button className="ticket-buttons"><img onClick={value.cancelOrder} src={Cancel} alt="Cancelar"></img></button>
+                    <button className="ticket-buttons"><img onClick={value.confirmOrder} src={confirm} alt="Enviar"></img></button> 
+                    <button className="ticket-buttons"><img onClick={value.cancelOrder} src={cancel} alt="Cancelar"></img></button>
                   </div>
                 </div>
               </div>
