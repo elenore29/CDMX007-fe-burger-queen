@@ -81,14 +81,13 @@ li {
   width: 25%;
   height: 100vh; 
   display: flex;
-  flex-direction: column; 
+  align-items: center;
 }
 
 .ticket {
   background-color:#acb8bf; 
-  width: 90%; 
-  height: 70%;
-  margin-top: 15%;
+  width: 100%; 
+  height: 70vh;
   box-shadow: -4px 10px 10px 3px grey;
   text-align: left; 
   padding: 5%;
@@ -97,13 +96,26 @@ li {
   font-size: 30px; 
 }
 
+.list {
+  height: 85%; 
+  overflow: auto ;
+}
+
+.ticket2 {
+  width: 100%;
+}
+
 .ticket-buttons{
-  width: 50%; 
-  height: 5%; 
   background-color: #edf5f9;
   border: 0px; 
-  margin-top: 30px;
   display: inline-block;  
+  margin: 25px 0px;
+}
+
+.cancel-confirm {
+  width: 100%;
+  display: flex; 
+  justify-content: center;
 }
 
 .total {
@@ -112,38 +124,60 @@ li {
 }
 
 .product-list {
-  font-size: 15px; 
+  font-size: 14px; 
   width: 50%;
   padding-left: 0px; 
   padding-top: 5px; 
 }
 
 .product-price {
-  font-size: 15px; 
-  width: 15%;
+  font-size: 14px; 
   padding-left: 0px; 
   padding-top: 5px; 
   color: #f8d554;
+  margin: 0px;
+  padding-right: 0%;
+}
+
+.product-quantity {
+  font-size: 18px; 
+  width: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 5px; 
+  color: white;
+  margin: 0;
 }
 
 .product-box {
   display: flex; 
   margin-top: 10px; 
+  margin: 0px;
 }
 
 .edit-item {
-  width: 35px; 
+  width: 30px; 
   border: 0px;
+  padding: 0px; 
+  margin-left: 10px;
+  margin-right: 0px;
   background-color:#acb8bf; 
 }
 
 .delete-item {
-  width: 35px; 
+  width: 30px; 
   border: 0px;
+  padding: 0px; 
+  margin-left: 10px;
+  margin-right: 0px;
   background-color:#acb8bf; 
 }
 
 .icon-item {
+  width: 100%; 
+}
+
+.icon-item2 {
   width: 100%; 
 }
 
