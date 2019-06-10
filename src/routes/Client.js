@@ -7,11 +7,11 @@ class Client extends Component {
   render() {
     return ( 
       <div className="App">
-        <header className="App-header">
+        <div className="App-content">
           <img className="burger-logo" src={logo} alt="Logo"></img>
           <h1>NOMBRE</h1>
           <Input handleClientName={this.props.handleClientName}></Input>            
-        </header>
+        </div>
       </div>
     )
   }

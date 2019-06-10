@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import {AppContextConsumer} from '../store/index.js';
 import '../App.css';
 import logo from '../images/logo.png';
-import add from '../images/agregar.png';
-import remove from '../images/quitar.png'
 
 class Specifications extends Component {
   render() {
@@ -12,7 +10,7 @@ class Specifications extends Component {
         {value => {
           return ( 
             <div className="App">
-              <header className="App-header">
+              <div className="App-content">
                 <img className="burger-logo" src={logo} alt="Logo"></img>
                 <h1>ESPECIFICACIONES</h1>
                 <p className="menu-title">Selecciona para agregar una porción extra o quitar</p>
@@ -28,11 +26,8 @@ class Specifications extends Component {
                     </div>
                   )}
                 </div>
-                <div> 
-                  <img className="add-icon" src={add} alt="Agregar"></img>
-                  <img className="remove-icon" src={remove} alt="Quitar"></img>
-                </div>
-              </header>
+               
+              </div>
             </div>
           )
         }} 

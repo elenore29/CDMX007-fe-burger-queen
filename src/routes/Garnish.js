@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
 import {AppContextConsumer} from '../store/index.js';
-import '../App.css';
+import '../App.css'
 
-class Bebidas extends Component {
+class Garnish extends Component {
   render() {
-    return (
+    return ( 
       <AppContextConsumer>
         {value => {
           return ( 
             <div className="menu-container">
-              <h1>BEBIDAS</h1>
+              <h1>GUARNICIÓN</h1>
               <div className="menu-content"> 
-                {value.menu.bebidas.map(element => 
+                {value.menu.guarniciones.map(element => 
                   <div key={element.id} className="menu-boxes"> 
                     <div className="center">
                       <div onClick={()=>value.add(element)} className="icon-container">
                         <img className="menu-icon" src={element.img} alt="Sensilla"></img>
                         <p className="product-title">{element.producto}</p>
                         <p className="product-title">$ {element.precio}</p>
-                      </div>
+                      </div> 
                     </div>
                   </div>
                 )}
@@ -31,4 +31,4 @@ class Bebidas extends Component {
   }
 };
 
-export default Bebidas;
+export default Garnish;

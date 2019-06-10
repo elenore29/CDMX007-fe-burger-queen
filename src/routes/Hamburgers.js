@@ -7,10 +7,10 @@ class Hamburgers extends Component {
     render() {
         return ( 
             <div className="App">
-            <header className="App-header">
+            <div className="App-content">
               <img className="burger-logo" src={logo} alt="Logo"></img>
               <Minimenu></Minimenu>
-            </header>
+            </div>
           </div>
             )
     }

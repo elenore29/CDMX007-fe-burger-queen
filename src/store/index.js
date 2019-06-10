@@ -152,7 +152,7 @@ export class AppContextProvider  extends Component {
         const {
             onAlert4,
         } = this.state;
-    
+       
         return(
             <AppContext.Provider 
                 value={{

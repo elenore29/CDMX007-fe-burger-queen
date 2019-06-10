@@ -35,7 +35,8 @@ class Ticket extends Component{
                             <li style={{ listStyleType: "none" }} className="product-quantity">{element.quantity}</li>
                             <li style={{ listStyleType: "none" }} className="product-list">{element.id}</li>
                             <li style={{ listStyleType: "none" }} className="product-price">${element.precio}</li>
-                            <button className="edit-item"><img className="icon-item2" src={editBtn} alt="Editar"></img></button> 
+                            {element.type === 'Burger' ?
+                            <button className="edit-item"><img className="icon-item2" src={editBtn} alt="Editar"></img></button> : null}
                             <button  onClick={()=>value.delete(element, index)} className="delete-item"><img className="icon-item" src={deleteBtn} alt="Eliminar"></img></button>
                           </div>                
                         )}
