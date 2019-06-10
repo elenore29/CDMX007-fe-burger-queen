@@ -8,6 +8,7 @@
             "total": 40.00,
             "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
             "specifications": "Con todo", 
+            "type": "Burger", 
             "quantity": 1
         },
         {
@@ -18,6 +19,7 @@
             "total": 40,
             "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
             "specifications": "Con todo", 
+            "type": "Burger", 
             "quantity": 1
 
         },
@@ -28,7 +30,8 @@
             "precio": 40.00,
             "total": 40.00,
             "img": "https://i.ibb.co/9YvyPRG/sencilla.png",
-            "specifications": "Con todo", 
+            "specifications": "Con todo",
+            "type": "Burger",  
             "quantity": 1
         }
     ],
@@ -41,6 +44,7 @@
             "total": 55.00,
             "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
             "specifications": "Con todo", 
+            "type": "Burger", 
             "quantity": 1
         }, 
         {
@@ -51,6 +55,7 @@
             "total": 55.00,
             "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
             "specifications": "Con todo", 
+            "type": "Burger", 
             "quantity": 1
         },
         {
@@ -61,6 +66,7 @@
             "total": 55.00,
             "img": "https://i.ibb.co/ccmj7ym/hamburger.png",
             "specifications": "Con todo", 
+            "type": "Burger", 
             "quantity": 1
         }
     ],

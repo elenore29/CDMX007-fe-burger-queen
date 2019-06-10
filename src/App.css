@@ -199,7 +199,7 @@ h4 {
 }
 
 /* Client */
-.App-header {
+.App-content {
   background-color: #edf5f9;
   width: 50%;
   height: 100vh; 
@@ -251,12 +251,16 @@ h4 {
   background-color: #d9e3e6; 
   float: left; 
   padding-top: 10px;  
-  padding-bottom: 10px;    
+  padding-bottom: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d9e3e6;
 }
 
 .icon-container:hover {
   border-style: solid;
   border-width: 2px;
+  border-color: #7dcff1;
 }
 
 .menu-content {

@@ -13,9 +13,9 @@ const ToolBar = ()=>
       <li className="route-link" style={{ listStyleType: "none" }}>
         <Link to="/hamburguesas/" className="menu-link">Hamburguesas</Link>
       </li>
-      <li className="route-link" style={{ listStyleType: "none" }}>
+    {/*   <li className="route-link" style={{ listStyleType: "none" }}>
         <Link to="/especificaciones/" className="menu-link">Especificaciones</Link>
-      </li>
+      </li> */}
     </ul>
   </nav>
 

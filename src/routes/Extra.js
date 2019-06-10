@@ -2,23 +2,23 @@ import React, {Component} from 'react';
 import {AppContextConsumer} from '../store/index.js';
 import '../App.css'
 
-class Guarniciones extends Component {
+class Extra extends Component {
   render() {
     return ( 
       <AppContextConsumer>
         {value => {
           return ( 
             <div className="menu-container">
-              <h1>GUARNICIÓN</h1>
+              <h1>EXTRAS</h1>
               <div className="menu-content"> 
-                {value.menu.guarniciones.map(element => 
+                {value.menu.extras.map(element => 
                   <div key={element.id} className="menu-boxes"> 
                     <div className="center">
                       <div onClick={()=>value.add(element)} className="icon-container">
                         <img className="menu-icon" src={element.img} alt="Sensilla"></img>
                         <p className="product-title">{element.producto}</p>
                         <p className="product-title">$ {element.precio}</p>
-                      </div> 
+                      </div>
                     </div>
                   </div>
                 )}
@@ -31,4 +31,4 @@ class Guarniciones extends Component {
   }
 };
 
-export default Guarniciones;
+export default Extra;

@@ -11,7 +11,7 @@ class Breakfast extends Component {
           return (
             <Fragment>
               <div className="App">
-                <header className="App-header">
+                <div className="App-content">
                   <img className="burger-logo" src={logo} alt="Logo"></img>
                   <h1>DESAYUNOS</h1>
                   <div className="menu-content"> 
@@ -27,7 +27,7 @@ class Breakfast extends Component {
                       </div>
                     )}
                   </div>
-                </header>
+                </div>
               </div>
             </Fragment>
           )
